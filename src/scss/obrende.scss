@@ -1,6 +1,5 @@
 .Obrende{
   background-color:  #E5E5E5;
-
 }
 .Obrende_inner h1{
   justify-content: center;
@@ -9,11 +8,29 @@
 }
 .Obrende_LR{
   display: flex;
+  justify-content: center;
 }
 .Obrende_left{
+  margin-left: -350px;
+}
+.Obrende_p1{
+  width: 539px;  
+  margin-top: -30px;
+}
+.Obrende_p2{
+  width: 539px;
+  margin-top: 30px;
+}
+.Obrende_p3{
+  width: 539px;
+  margin-top: 30px;
+}
+.Obrende_MOre{
   display: flex;
+  margin-top: 50px;
 }
-.Wslide1{
-width: 100%;
-height: 100%;
+.Obrende_right {
+  margin-left: -330px;
+  margin-top: 200px;
 }
+
