@@ -3,50 +3,28 @@ import { Link } from 'react-router-dom'
 import imgDeliver from '../../assets/deliver/elean62862 1.jpg'
 import icon from '../../assets/deliver/Group 1484.svg'
 
-const Deliver = () => {
+const Pay = () => {
   return (
     <section className='deliver'>
         <div className='container'>
-            <h2 className='deliver__title'>Доставка</h2>
+            <h2 className='deliver__title'>Оплата</h2>
             <ul className='deliver__ul'>
                 <li className='deliver__ul-il'><Link to='/Obmen' className='deliver__ul-li'>ОБМЕН</Link></li>
                 <li className='deliver__ul-il'><Link  to='/Voz' className='deliver__ul-li'>ВОЗВРАТ</Link></li>
-                <li className='deliver__ul-il'><Link to='/Pay' className='deliver__ul-li'>ОПЛАТА</Link></li>
+                <li className='deliver__ul-il'><Link to='/' className='deliver__ul-li'>ДОСТАВКА</Link></li>
             </ul>
             <div className='deliver__page'>
               <img className='deliver__page-img' src={imgDeliver} alt="imgDeliver"/>
               <div className='deliver__page-text'>
-                <h2 className='deliver__page-title'>ВИДЫ ДОСТАВКИ</h2>
-                <p className='deliver__page-p'>Механизм нашей работы продуман до мелочей. Вам не придется беспокоиться и долго ждать.</p>
-                <p className='deliver__page-p'> Служба доставки работает без выходных с 8 утра до 1 часа ночи. Мы осуществляем доставку по Москве и ближайшему Подмосковью.</p>
-                <p className='deliver__page-p'>Оформляя заказ, просто выберите подходящий вам временной интервал и мы доставим ваши продукты точно в указанное время.</p>
-                <p className='deliver__page-p'>Срок доставки с момента подтверждения <br/>заказа — 1-3 дня.</p>
-                <span className='deliver__page-span_first'>
-                  <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.5 20H29.5" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M20.5 24L20.5 7" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M0.5 20H4.5" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M36.5 20H40.5" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M6.35791 34.1426L9.18634 31.3142" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M31.8135 8.68555L34.6419 5.85712" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M34.6426 34.1426L31.8142 31.3142" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M9.18555 8.6875L6.35712 5.85907" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M20.5 40L20.5 36" stroke="#D1B59A" stroke-width="2"/>
-                    <path d="M20.5 4L20.5 -1.78814e-07" stroke="#D1B59A" stroke-width="2"/>
-                    <circle cx="20.5" cy="20" r="19" stroke="#D1B59A" stroke-width="2"/>
-                  </svg>
-                </span>
-                <p className='deliver__page-p'>Доставка во все регионы осуществляется по 100%<br/> предоплате на нашем сайте любой картой, курьерской<br/> службой до двери.</p>
-                <p className='deliver__page-p'>При покупке на сумму от 15 000₽ доставка в подарок, в остальных случаях 500₽, за границу 1 200₽.</p>
-                <span className='deliver__page-span_second'>
-                  <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 10.9023H39.332V17.8393H1.5V10.9023Z" stroke="#D1B59A" stroke-width="2" stroke-miterlimit="3.8637"/>
-                    <path d="M17 10.9023H23.568V40.1003H17V10.9023Z" stroke="#D1B59A" stroke-width="2" stroke-miterlimit="3.8637"/>
-                    <path d="M38.069 17.8594H2.93103V40.1004H38.069V17.8594Z" stroke="#D1B59A" stroke-width="2" stroke-miterlimit="3.8637"/>
-                    <path d="M20.679 10.7888C20.679 10.7888 20.142 5.75277 21.451 3.47077C22.76 1.18877 26.268 -0.0542263 27.846 2.16177C29.424 4.37677 28.283 9.37777 21.098 10.8888" stroke="#D1B59A" stroke-width="2" stroke-miterlimit="3.8637"/>
-                    <path d="M20.494 10.7888C20.494 10.7888 21.0309 5.75277 19.7219 3.47077C18.4129 1.18877 14.905 -0.0542263 13.327 2.16177C11.749 4.37677 12.89 9.37777 20.075 10.8888" stroke="#D1B59A" stroke-width="2" stroke-miterlimit="3.8637"/>
-                  </svg>
-                </span>
+                <h2 className='obmen__title'>КАК ОПЛАТИТЬ ЗАКАЗ</h2>
+                <p className='obmen__pe'><b>Картой на сайте, Apple Pay, Google Pay</b></p>
+                <li className='obmen__li'>Подтвердите заказ на странице "оформление заказа" и выберите способ оплаты - оплатой картой. Введите данные своей карты на открывшейся старнице платежной системы. В случае возврата, деньги вернутся на карту, с которой вы оплачивали заказ.</li>
+                <p className='obmen__pe'><b>Наличными или картой стилисту бренда или курьеру (доступно по Москве и ближайшему Подмосковью)</b></p>
+                <p className='obmen__pe'><b>В рассрочку от нашего партнера, банка Tinkoff</b></p>
+                <li className='obmen__li'>Заказ можно оплатить в рассрочку, решение от банка вы получите в течение 5 минут. </li>
+                <li className='obmen__li'>В карточке товара или при оформлении заказа выберите "купить в рассрочку"</li>
+                <li className='obmen__li'>Заполните условия покупки (сумма покупки и срок рассрочки) и анкету, отправьте ее на рассмотрение в банк.</li>
+                <li className='obmen__li'>Вы получите уведомление о подтверждении рассрочки и, после проверки всех данных, можете оформить согласие. Далее мы с Вами свяжемся в течение 2-х рабочих часов.</li>
               </div>
             </div>
             <h2 className='deliver__title-two'>ВОПРОСЫ И ОТВЕТЫ</h2>
@@ -124,4 +102,4 @@ const Deliver = () => {
   )
 }
 
-export default Deliver
+export default Pay

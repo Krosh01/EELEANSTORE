@@ -224,3 +224,42 @@
         }
     }
 }
+
+.obmen{
+    &__span {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+    }
+    &__title {
+        font-family: 'FuturaBookC';
+        font-size: 21px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    &__p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+    }
+    &__li {
+        display: flex;
+        text-align: left;
+        font-weight: normal;
+        padding-left: 25px;
+        letter-spacing: 0.05em;
+        line-height: 24px;
+        &::before {
+            content: '•';
+            margin-right: 7px;
+        }
+    }
+    &__pe {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+    }
+}
