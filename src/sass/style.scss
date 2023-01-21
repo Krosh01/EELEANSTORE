@@ -8,10 +8,12 @@
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     color: #000;
+
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
@@ -23,3 +25,8 @@ html {
 @import './header.scss';
 @import './deliver.scss';
 @import './headerStatic.scss';
+@import './footer.scss';
+@import './begin.scss';
+@import './collection.scss';
+@import './obrende.scss';
+@import './Slider.scss';

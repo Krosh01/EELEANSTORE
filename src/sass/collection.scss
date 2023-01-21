@@ -1,0 +1,29 @@
+.collection{
+    background-color:  #E5E5E5;
+}
+.collection_inner_top {
+    display: flex;
+    justify-content: center;
+    
+}
+.colliction_left_down{
+    display: flex;
+    justify-content: space-between;
+}
+.collection_left{
+    padding-left: -20px;
+}
+.collection_right{
+    margin-left: 15px;
+}
+.collection_right_up{
+    display: flex;
+    justify-content: space-between;
+}
+.collection_inner_down{
+    display: flex;
+    justify-content:space-between;
+}
+.collection p{
+    padding-top: 20px;
+}
