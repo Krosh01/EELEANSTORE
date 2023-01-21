@@ -1,0 +1,82 @@
+.Footer{
+  background-color: #FAFAFA;
+}
+.Footer_inner{
+  display: flex;
+  justify-content: space-between;
+}
+.Footer_start p{
+  font-size: 15px;
+  font-weight: 500;
+} 
+.FooterAppContact{
+  margin-top:43px ;
+}
+.FooterEmail{
+  margin-top: 45px;
+}
+.Footer_nav ul {
+  display: flex;
+  justify-content: center;
+}
+.Footer_nav ul li{
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+.Footer_Information{
+  display: flex;
+  margin-top: 54px;
+  font-size: 15px;
+  font-weight: 500;
+  justify-content: space-between;
+}
+.FooterApps{
+  margin-top: 42px;
+}
+.FOoter_icon_apps{
+  padding-left: 25px;
+}
+.Footer_input{
+  height: 34px;
+  width: 302px;
+  border: 1px solid #D7B494;
+  padding: 5px 0px 5px 10px;
+  color: black;
+}
+.Footer_input2{
+  height: 34px;
+  width: 302px;
+  border: 1px solid #D7B494;
+  padding: 5px 0px 5px 10px;
+  color: black;
+  margin-top: 10px;
+}
+.Footer_Agreement{
+  display: flex;
+  margin-top: 10px;
+}
+.Footer_Agreement p{
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.Footer_Agreement a{
+  font-size: 13px;
+  font-weight: 500;
+  color: #D7B494;
+  margin-left: 15px;
+}
+.Footer_Subscribe_button{
+  display: flex;
+  height: 34px;
+  width: 302px;
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border: 1px solid #D7B494;
+  margin-top: 10px;
+}
