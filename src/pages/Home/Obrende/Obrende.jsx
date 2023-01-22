@@ -1,6 +1,7 @@
 import React from 'react';
 import obrendebg from '../../../assets/obrende/obrendebg.png'
-import arrowright from '../../../assets/Footer/arrowrightFooter.svg'
+// import arrowright from '../../../assets/Footer/arrowrightFooter.svg'
+import arrowright from '../../../assets/obrende/Group 1452.svg'
 
 
 const Obrende = () => {
@@ -14,7 +15,7 @@ const Obrende = () => {
                      
                     </div>
                     <div className="Obrende_right">
-                        <p>
+                        <p className='Obrende_rightp1'>
                         Сегодня ELEAN - это первый в России 
                         магазин готового женского смокинга. 
                         У нас каждая женщина может подобрать
@@ -22,13 +23,13 @@ const Obrende = () => {
                          как у голливудских див и звезд светской 
                          хроники.
                         </p>
-                        <p>
+                        <p className='Obrende_rightp2' >
                             Костюм со смокингом ELEAN - выбор звёзд 
                             эстрады и кино, телеведущих, fashion-стилистов, 
                             успешных женщин-руководителей, представительниц 
                             научной и деловой элиты.
                         </p>
-                        <p>
+                        <p className='Obrende_rightp3' >
                         История бренда началась задолго до первого
                          показа, который состоялся 12 марта 2016 
                          года, с мечты автора коллекции, Елены 

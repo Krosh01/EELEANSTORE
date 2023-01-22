@@ -1,11 +1,41 @@
 .Obrende{
-  background-color:  #E5E5E5;
-
+  background-color:  #FAFAFA;
 }
 .Obrende_inner h1{
   justify-content: center;
   text-align: center;
   align-items: center;
 }
-
-
+.Obrende_LR{
+  display: flex;
+  justify-content: center;
+}
+.Obrende_left{
+  transform: translate(-20px,0);
+}
+.Obrende_right{
+  transform: translate(-350px,150px);
+}
+.Obrende_right p{
+  font-weight: 400px;
+  font-size: 15px;
+}
+.Obrende_rightp1{
+  width: 450px;
+  height: 110px;
+}
+.Obrende_rightp2{
+  width: 450px;
+  height: 90px;
+}
+.Obrende_rightp3{
+  width: 450px;
+  height: 150px;
+}
+.Obrende_MOre{
+  display: flex;
+  color: #C0C0C0;
+}
+.Obrende_MOre p{
+  color: #C0C0C0;
+}

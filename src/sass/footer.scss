@@ -3,27 +3,36 @@
 }
 .Footer_inner{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 170px;
+  margin-top: 60px;
 }
 .Footer_start p{
   font-size: 15px;
   font-weight: 500;
 } 
+.FooterAppContact p{
+  width: 240px;
+}
+.Footer_icon{
+  margin-top: -10px;
+}
 .FooterAppContact{
-  margin-top:43px ;
+  margin-top:40px ;
 }
 .FooterEmail{
-  margin-top: 45px;
+  margin-top: 70px;
 }
 .Footer_nav ul {
   display: flex;
   justify-content: center;
+  gap: 17px;
 }
 .Footer_nav ul li{
   list-style: none;
   font-size: 14px;
   font-weight: 500;
-  padding: 0 10px;
 }
 .Footer_Information{
   display: flex;
@@ -44,6 +53,7 @@
   border: 1px solid #D7B494;
   padding: 5px 0px 5px 10px;
   color: black;
+  margin-top: -40px;
 }
 .Footer_input2{
   height: 34px;
@@ -66,7 +76,10 @@
   font-size: 13px;
   font-weight: 500;
   color: #D7B494;
-  margin-left: 15px;
+  margin-left: 5px;
+}
+.Footer_End{
+  margin-top: -20px;
 }
 .Footer_Subscribe_button{
   display: flex;
@@ -79,4 +92,7 @@
   padding: 0 10px;
   border: 1px solid #D7B494;
   margin-top: 10px;
+}
+.Footer_checkbox{
+  border: 1px solid #D7B494;
 }

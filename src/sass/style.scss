@@ -8,20 +8,16 @@
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     color: #000;
-
 }
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
 .container {
-    max-width: 1250px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 19px 20px;
 }
-
 @import './header.scss';
 @import './deliver.scss';
 @import './headerStatic.scss';
@@ -30,3 +26,8 @@ html {
 @import './collection.scss';
 @import './obrende.scss';
 @import './Slider.scss';
+@import './shouroom.scss';
+@import './Primerka.scss';
+@import './Star.scss';
+@import './Otziv.scss';
+@import './Instagram.scss';

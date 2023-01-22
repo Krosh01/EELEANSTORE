@@ -1,0 +1,56 @@
+.Otziv{
+    background-color: #FAFAFA;
+    &_button{
+        height: 36px;
+        width: 309px;  
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid #D7B494;
+        padding: 10px 59px 11px 59px;
+        color:  #D7B494;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+        &_l_content{
+            display: flex;
+            align-items: center;   
+            margin-top: 65px;
+        }
+        &_l_icon{
+            transform: translate(-10px,-70px);
+        }
+        &_l_coment{
+            &_p{
+                display: flex;
+                justify-content: space-between;
+                color: #B6B6B6;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            &_p p {
+                color: #B6B6B6;
+            }
+            &_p span {
+                color: #B6B6B6;
+            }
+            &_text {
+                height: 116px;
+                width: 564px;
+                border: 1px dashed #B8B5B5;
+                padding: 21px 18px 25px 28px;
+                margin-top: 15px;
+                &_text p{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.Primerka{
+    background-color:#FAFAFA ;
+}
+.Primerka_inner{
+    border: 1px solid #CBC8C8;
+    height: 420px;
+}
+.PrimerkaIcon{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+}
+.Primerka_inner h1{
+    text-align: center;
+    justify-content: center;
+    margin-top: 23px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.Primerka_input_row1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Primerka_input{
+    height: 60px;
+    width: 305px;
+    padding: 0 0 0 10px;
+    border: 1px solid black;
+    background-color: #FAFAFA;
+    color: black;
+
+}
+.Primerka_input_row2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Primerka_input_coment{
+    height: 60px;
+    width: 735px;
+    border: 1px solid black;
+    padding-left:10px ;
+    background-color: #FAFAFA;
+    color: black;
+}
+
+.Primerka_button {
+    cursor: pointer;
+    min-width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background: none;
+    border: 1px solid #000000;
+    border-left: none;
+    font-family: 'FuturaBookC';
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+    &:hover{
+        background-color: #000000;
+        color: #fff;
+
+    }
+
+}
+
+
+
+
+
+
+

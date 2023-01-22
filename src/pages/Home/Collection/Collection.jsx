@@ -50,21 +50,25 @@ const Collection = () => {
                         </div>
                     </div>    
                     <div className="collection_inner_down">
-                        <div className="collection_inner_down_img1">
-                            <p>Блузы</p>
-                            <img src={collect7} alt="" />
+                        <div className="collection_inner_down_left">
+                            <div className="collection_inner_down_img1">
+                                <p>Блузы</p>
+                                <img src={collect7} alt="" />
+                            </div>
+                            <div className="collection_inner_down_img2">
+                                <p>Юбки</p>
+                                <img src={collect8} alt="" />
+                            </div>
                         </div>
-                        <div className="collection_inner_down_img2">
-                            <p>Юбки</p>
-                            <img src={collect8} alt="" />
-                        </div>
-                        <div className="collection_inner_down_img3">
-                            <p>Топы и жилеты</p>
-                            <img src={collect08} alt="" />
-                        </div>
-                        <div className="collection_inner_down_img4">
-                            <p>Аксессуары</p>
-                            <img src={collect9} alt="" />
+                        <div className="collection_inner_down_right">
+                            <div className="collection_inner_down_img3">
+                                <p>Топы и жилеты</p>
+                                <img src={collect08} alt="" />
+                            </div>
+                            <div className="collection_inner_down_img4">
+                                <p>Аксессуары</p>
+                                <img src={collect9} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

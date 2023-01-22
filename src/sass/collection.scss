@@ -1,10 +1,9 @@
 .collection{
-    background-color:  #E5E5E5;
+    background-color:  #FAFAFA;
 }
 .collection_inner_top {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 .colliction_left_down{
     display: flex;
@@ -21,9 +20,25 @@
     justify-content: space-between;
 }
 .collection_inner_down{
+    display: flex;  
+}
+.collection_inner_down_left{
+    margin-left: -15px;
     display: flex;
-    justify-content:space-between;
+}
+.collection_inner_down_right{
+    margin-left: 30px;
+    display: flex;
+}
+.collection_inner_down_img2{
+    margin-left: 15px;
+}
+.collection_inner_down_img3{
+    margin-left: -15px;
+}
+.collection_inner_down_img4{
+    margin-left: 15px;
 }
 .collection p{
     padding-top: 20px;
-}
+}   

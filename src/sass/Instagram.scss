@@ -1,0 +1,30 @@
+.Instagram{
+    background-color: #FAFAFA;
+    &_inner{
+        & h1{
+            text-align: center;
+            justify-content: center;
+            font-size: 21px;
+            font-weight: 400;
+        }
+        &_row{
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+            margin-top: 30px;
+            &_card{
+                background-color: whitex;
+               &_content{
+                display: flex;
+                justify-content: space-between;
+                &_text1 p{
+                    color: #575555;                    
+                }
+                &_text1 a{
+                    color: #42AAFF;              
+                }
+               }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.Shouroom{
+    background-color: #FAFAFA;
+}
+.Shouroom h1{
+    text-align: center;
+    justify-content: center;
+    font-weight: 400px; 
+    font-size: 21px;
+    // width: 100px;
+    // height: 100px;
+}
+.Shouroom h1::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    margin-left:50%;
+    background-color: #D7B494;
+    border-radius: 100px;
+}
+.Shouroom h1:hover::after{
+    transition: 0.3s ease-out;
+    width: 100%;
+    margin: 0;
+}
+.Shouroom_photo_row{
+    display: flex;
+    margin-top: 40px;
+}
+.Shouroom_img1{
+    height: 550px;
+    width: 435px;
+    margin-top: 30px;
+}
+.Shouroom_img2{
+    height: 550px;
+    width: 435px;
+}
+.Shouroom_img3{
+    height: 550px;
+    width: 435px;
+    margin-top: -30px;
+}
