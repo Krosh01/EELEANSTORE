@@ -5,6 +5,7 @@ import vk from '../../assets/Header/vk.svg'
 import facebook from '../../assets/Header/f.svg'
 import arrowright from '../../assets/Footer/arrowrightFooter.svg'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 const Footer = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -28,7 +29,7 @@ const Footer = () => {
             <div className="Footer_Middle">
               <div className="Footer_nav">
                 <ul>
-                  <li>ДОСТАВКА</li>
+                  <li> <Link to='deliver'>ДОСТАВКА</Link> </li>
                   <li>ОПЛАТА</li>
                   <li>ВОЗВРАТ</li>
                   <li>РАЗМЕРНАЯ</li>
