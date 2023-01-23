@@ -1,8 +1,19 @@
 import React from 'react'
 import imgDeliver from '../../assets/deliver/elean62862 1.jpg'
 import icon from '../../assets/deliver/Group 1484.svg'
+import { useState } from 'react'
 
 const Deliver = () => {
+  const  [name, setName] = useState('')
+  const  [phone, setPhone] = useState('')
+  const  [time, setTime] = useState('')
+  const  [comment, setComment] = useState('')
+  function f2 (){
+      setName('')
+      setPhone('')
+      setTime('')
+      setComment('')
+  }
   return (
     <section className='deliver'>
         <div className='container'>
@@ -110,11 +121,11 @@ const Deliver = () => {
                 <img className='deliver__questions-icon' src={icon} alt="icon"/>
                 <h2 className='deliver__questions-title'>ЗАДАТЬ ВОПРОС</h2>
                 <form className='deliver__questions-form'>
-                  <div className='deliver__questions-object'><input className='deliver__questions-object_inp' type="text" placeholder='Введите имя' required/></div>
-                  <div className='deliver__questions-object'><input className='deliver__questions-object_inp' type="number" placeholder='Введите номер' required/></div>
-                  <div className='deliver__questions-object'><input className='deliver__questions-object_inp' type="email" placeholder='Введите свой email' required/></div>
-                  <textarea className='deliver__questions-object_textarea' name="textArea" id="" data-minLength="5" rows="3" placeholder='Сообщение'></textarea>
-                  <button className='deliver__questions-btn' type='submit'>Отправить</button>
+                  <div className='deliver__questions-object'><input onChange={(e) => setName(e.target.value)} value={name} className='deliver__questions-object_inp' type="text" placeholder='Введите имя' required/></div>
+                  <div className='deliver__questions-object'><input onChange={(e) => setPhone(e.target.value)} value={phone} className='deliver__questions-object_inp' type="number" placeholder='Введите номер' required/></div>
+                  <div className='deliver__questions-object'><input onChange={(e) => setTime(e.target.value)} value={time} className='deliver__questions-object_inp' type="email" placeholder='Введите свой email' required/></div>
+                  <textarea className='deliver__questions-object_textarea'  onChange={(e) => setComment(e.target.value)} value={comment} name="textArea" id="" data-minLength="5" rows="3" placeholder='Сообщение'></textarea>
+                  <button className='deliver__questions-btn' onClick={f2} type='submit'>Отправить</button>
                 </form>
               </div>
             </div>
