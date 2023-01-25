@@ -1,7 +1,7 @@
 .md27 {
     &__over{
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -13,7 +13,7 @@
         width: 914px;
         display: flex;
         flex-direction: column;
-        margin: 15px     auto;
+        margin: 15px  auto;
         background-color: transparent;
         text-align: center;
     }

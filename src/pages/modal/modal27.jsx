@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../../assets/modal/first.jpg'
 import img2 from '../../assets/modal/second.jpg'
 import img3 from '../../assets/modal/third.jpg'
 
 const Modal27 = () => {
-
-
   return (
     <section className='md27'>
         <div className='container'>
