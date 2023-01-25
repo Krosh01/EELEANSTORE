@@ -66,8 +66,8 @@ const HeaderStatic = () => {
                       <li><Link to='/'><svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.87742 23.5611L0.972656 25.189V25.528H20.3814L21.3256 19.04L21.167 19.0219L17.1719 24.7654H7.64119V12.8184H13.0307L15.1684 16.1713H15.4731V8.79389H15.1684L13.0307 12.0558H7.64119V0.762617H15.9539L19.0231 6.48798H19.1875V0H0.972656V0.33902L3.87742 1.98531V23.5611Z" fill="black"/></svg></Link></li>
                       <li><Link to='/'>ПОКУПАТЕЛЯМ</Link></li>
                       <li><Link to='/'>О БРЕНДЕ</Link></li>
-                      <li><Link to='/'>ШОУРУМ</Link></li>
-                      <li><Link to='/'>КОНТАКТЫ</Link></li>
+                      <li><Link to="showRoom">ШОУРУМ</Link></li>
+                      <li><Link to="Contact">КОНТАКТЫ</Link></li>
                     </ul>
                 </li>
                 <li>

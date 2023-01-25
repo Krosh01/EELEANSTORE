@@ -9,15 +9,18 @@
     font-family: 'Lato', sans-serif;
     color: #000;
 }
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 .container {
     max-width: 1350px;
     margin: 0 auto;
     padding: 19px 20px;
 }
+
 @import './header.scss';
 @import './deliver.scss';
 @import './headerStatic.scss';
@@ -31,3 +34,6 @@ html {
 @import './Star.scss';
 @import './Otziv.scss';
 @import './Instagram.scss';
+@import "../pages/showRoom/ShowRoom.scss";
+@import '../pages/Contact/Contact.scss';
+@import '../pages/Primerka/Primerka.scss';
