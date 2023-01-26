@@ -9,27 +9,27 @@ const Modal29 = () => {
                 <div className='md29-body_title'>ВЫБЕРИТЕ РАЗМЕР</div>
                 <div className='md29-body_radio'>
                     <label className='md29-body_card disbled'>
-                        <input type="radio" disabled/>
+                        <input name='radio' type="radio" disabled/>
                         <span>40</span>
                     </label>
                     <label className='md29-body_card'>
-                        <input type="radio"/>
+                        <input name='radio' type="radio"/>
                         <span>42</span>
                     </label>
                     <label className='md29-body_card'>
-                        <input type="radio" disabled/>
+                        <input name='radio' type="radio" disabled/>
                         <span>44</span>
                     </label>
                     <label className='md29-body_card'>
-                        <input type="radio"/>
+                        <input name='radio' type="radio"/>
                         <span>46</span>
                     </label>
                     <label className='md29-body_card'>
-                        <input type="radio"/>
+                        <input name='radio' type="radio"/>
                         <span>48</span>
                     </label>
                     <label className='md29-body_card'>
-                        <input type="radio"/>
+                        <input name='radio' type="radio"/>
                         <span>50</span>
                     </label>
                 </div>

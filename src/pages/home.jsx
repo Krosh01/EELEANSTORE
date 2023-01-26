@@ -1,12 +1,12 @@
 import React from 'react'
 import Deliver from './deliver/deliver copy'
-import Modal29 from './modal/modal29'
+import Modal25 from './modal/modal25'
 
 const Home = () => {
   return (
     <main className='wrapper'>
       {/* <Deliver/> */}
-      <Modal29/>
+      <Modal25/>
     </main>
   )
 }
