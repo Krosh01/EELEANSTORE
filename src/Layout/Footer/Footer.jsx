@@ -6,10 +6,11 @@ import facebook from '../../assets/Header/f.svg'
 import arrowright from '../../assets/Footer/arrowrightFooter.svg'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+
 const Footer = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
-  function f1 (){
+  function f1() {
     setEmail('')
     setName('')
   }
@@ -33,7 +34,7 @@ const Footer = () => {
                   <li>ОПЛАТА</li>
                   <li>ВОЗВРАТ</li>
                   <li>РАЗМЕРНАЯ</li>
-                  <li>ПРИМЕРКА</li>
+                  <li><Link to="Primerka">ПРИМЕРКА</Link></li>
                   <li>КОНТАКТЫ</li>
                 </ul>
               </div>
@@ -56,9 +57,9 @@ const Footer = () => {
             <div className="Footer_End">
               <div className="Footer_Subscribing">
                 <input onChange={(e) => setName(e.target.value)} value={name} className='Footer_input' placeholder='Имя' />
-                <input onChange={(e) => setEmail(e.target.value)} value={email} className='Footer_input2' placeholder='E-MAIL'  />
+                <input onChange={(e) => setEmail(e.target.value)} value={email} className='Footer_input2' placeholder='E-MAIL' />
                 <div className='Footer_Agreement'>
-                  <input className='Footer_checkbox' type="checkbox"/>
+                  <input className='Footer_checkbox' type="checkbox" />
                   <a>Я согласен </a>
                   <p>c политикой конфиденциальности</p>
                 </div>

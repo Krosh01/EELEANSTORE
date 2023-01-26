@@ -1,0 +1,62 @@
+.innerSite {
+    display: flex;
+    gap: 70px;
+}
+
+.RightContentinner {
+    display: flex;
+    margin-top: 30px;
+}
+
+.numberfirstcontact {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.h1StyleContact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    font-family: 'FuturaBookC';
+    color: #000000;
+    padding-top: 20px;
+}
+
+.DownClock {
+    display: flex;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.headerContactQuestion {
+    font-family: 'FuturaBookC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.ContactShapka {
+    display: flex;
+    align-items: center;
+    gap: 25%;
+}
+
+.ContactInner {
+    margin-top: 30px;
+}
+
+.formInpInfo {
+    display: flex;
+    margin: 26px 0;
+}
+
+.comment {
+    display: flex;
+}

@@ -9,10 +9,12 @@
     font-family: 'Lato', sans-serif;
     color: #000;
 }
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 .container {
     max-width: 1350px;
     margin: 0 auto;
@@ -32,3 +34,6 @@ html {
 @import './Star.scss';
 @import './Otziv.scss';
 @import './Instagram.scss';
+@import "../pages/showRoom/ShowRoom.scss";
+@import '../pages/Contact/Contact.scss';
+@import '../pages/Primerka/Primerka.scss';
