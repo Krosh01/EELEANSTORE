@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
+import { Link } from 'react-router-dom'
 
 const formSchema = Yup.object().shape({
     name: Yup.string()
@@ -9,6 +10,7 @@ const formSchema = Yup.object().shape({
     .min(3,'Должен содержать хотя бы 3 букв'),
     email: Yup.string().required('Забыли email ввести').email('Введите корекный email'),
     number: Yup.string().required('Забыли телефон ;)').min(9,'Введите коректный телефон'),
+    che: Yup.boolean().oneOf([true],'btn-tank'),
 })
 
 
@@ -16,15 +18,13 @@ const formSchema = Yup.object().shape({
 const Modal25 = () => {
 
     const validationOpt = { resolver: yupResolver(formSchema) }
+    const { register, handleSubmit, reset, formState } = useForm(validationOpt)
+    const { errors } = formState
 
-  const { register, handleSubmit, reset, formState } = useForm(validationOpt)
-
-  const { errors } = formState
-
-  function onFormSubmit(data) {
-    console.log(JSON.stringify(data, null, 4))
-    return false
-}
+    function onFormSubmit(data) {
+        console.log(JSON.stringify(data, null, 4))
+        return false
+    }
 
   return (
     <section className='md25'>
@@ -184,34 +184,45 @@ const Modal25 = () => {
                         <div className='md25__form-coment_check'>
                             <div className='md25__form-coment_radio'>
                                 <label className='md25__form-coment_radio-lab'>
-                                    <input name='radio' type="radio" disabled/>
+                                    <input name='radio' type="radio" value="40" disabled/>
                                     <span>40</span>
                                 </label>
                                 <label className='md25__form-coment_radio-lab'>
-                                    <input name='radio' type="radio"/>
+                                    <input name='radio' type="radio" value="42"/>
                                     <span>42</span>
                                 </label>
                                 <label className='md25__form-coment_radio-lab'>
-                                    <input name='radio' type="radio"/>
+                                    <input name='radio' type="radio" value="44"/>
                                     <span>44</span>
                                 </label>
                                 <label className='md25__form-coment_radio-lab'>
-                                    <input name='radio' type="radio"/>
+                                    <input name='radio' type="radio" value="46"/>
                                     <span>46</span>
                                 </label>
                                 <label className='md25__form-coment_radio-lab'>
-                                    <input name='radio' type="radio"/>
-                                    <span>46</span>
+                                    <input name='radio' type="radio" value="48"/>
+                                    <span>48</span>
                                 </label>
                                 <label className='md25__form-coment_radio-lab'>
-                                    <input name='radio' type="radio"/>
+                                    <input name='radio' type="radio" value="50"/>
                                     <span>50</span>
                                 </label>
                             </div>
                             <div className='md25__form-coment_text'>Выберите размер</div>
                         </div>
                     </div>
-                    <button type="submit">asasasasasas</button>
+                    <div className='md25__form-bottom'>
+                        <label className='md25__form-bottom_policy'>
+                            <input type="checkbox" required
+                            name='che'
+                            {...register('che')}
+                            className={`${errors.che ? 'error' : ''}`}
+                            />
+                            <b></b>
+                            <span>Я согласен с <Link to="/">политикой конфиденциальности</Link></span>
+                        </label>
+                        <button type="submit" className={`${errors.che?.message}`}>Оформить примерку</button>
+                    </div>
                 </form>
             </div>
         </div>

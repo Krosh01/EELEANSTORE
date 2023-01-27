@@ -276,5 +276,86 @@
                 text-transform: uppercase;
             }
         }
+        &-bottom {
+            display: flex;
+            margin-top: 25px;
+            align-items: center;
+            justify-content: space-between;
+            &_policy {
+                cursor: pointer;
+                position: relative;
+                display: flex;
+                align-items: center;
+                & input {
+                    width: 30px;
+                    height: 30px;
+                    outline: none;
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    position: absolute;
+                }
+                & b {
+                    display: block;
+                    min-width: 30px;
+                    height: 30px;
+                    border: 1px solid #000000;
+                    margin-right: 13px;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 1px;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(https://eleanboutique.ru/catalog/view/theme/default/assets/img/check.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        opacity: 0;
+                        transition: all 0.4s;
+                    }
+                }
+                & span {
+                    font-family: 'FuturaBookC';
+                    display: block;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 0.06em;
+                    color: #000000;
+                    & a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            &_policy input:checked + b::before {
+                opacity: 1;
+            }
+            .btn-tank {
+                background-color: #9D9DAD;
+            }
+            & button {
+                font-family: 'FuturaBookC';
+                margin-top: 26px;
+                outline: none;
+                display: flex;
+                width: 247px;
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border: none;
+                background-color: #242424;
+                border-radius: 3px;
+                font-weight: 500;
+                font-size: 15px;
+                letter-spacing: 0.1em;
+                color: #FFFFFF;
+                transition: all 0.4s;
+                border: 1px solid transparent;
+                text-transform: uppercase;
+            }
+        }
     }
 }
