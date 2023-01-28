@@ -10,7 +10,7 @@ const formSchema = Yup.object().shape({
     .min(3,'Должен содержать хотя бы 3 букв'),
     email: Yup.string().required('Забыли email ввести').email('Введите корекный email'),
     number: Yup.string().required('Забыли телефон ;)').min(9,'Введите коректный телефон'),
-    che: Yup.boolean().oneOf([true],'btn-tank'),
+    checked: Yup.boolean().oneOf([true],'btn-tank'),
 })
 
 
@@ -214,14 +214,14 @@ const Modal25 = () => {
                     <div className='md25__form-bottom'>
                         <label className='md25__form-bottom_policy'>
                             <input type="checkbox" required
-                            name='che'
-                            {...register('che')}
-                            className={`${errors.che ? 'error' : ''}`}
+                            name='checked'
+                            {...register('checked')}
+                            className={`${errors.checked ? 'error' : ''}`}
                             />
                             <b></b>
                             <span>Я согласен с <Link to="/">политикой конфиденциальности</Link></span>
                         </label>
-                        <button type="submit" className={`${errors.che?.message}`}>Оформить примерку</button>
+                        <button type="submit" className={`${errors.checked?.message}`}>Оформить примерку</button>
                     </div>
                 </form>
             </div>
