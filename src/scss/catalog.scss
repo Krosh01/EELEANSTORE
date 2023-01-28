@@ -1,0 +1,11 @@
+.catalog{
+    padding: 69px 0 60px;
+    &__content{
+        display: flex;
+        column-gap: 25px;
+    }
+    &__right{
+        width: 75%;
+        height: 100vh;
+    }
+}

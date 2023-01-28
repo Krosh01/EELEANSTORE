@@ -1,0 +1,184 @@
+{
+    "catalog": [
+        {
+            "id": 1,
+            "img": "/catalog/tuxedo/img1.png",
+            "title": "/ Жакет-смокинг с лацканами",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 2,
+            "img": "/catalog/tuxedo/img2.png",
+            "title": "/ Классический комплект с смокингом и жилетом",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 3,
+            "img": "/catalog/tuxedo/img3.png",
+            "title": "/ Белый жакет смокинг",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 4,
+            "img": "/catalog/tuxedo/img5.png",
+            "title": "/ Жакет-смокинг прямой",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 5,
+            "img": "/catalog/tuxedo/img6.png",
+            "title": "/ Белый смокинг с брюками-клёш",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 6,
+            "img": "/catalog/tuxedo/img7.png",
+            "title": "/ Жакет - смокинг приталенный синий",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 7,
+            "img": "/catalog/tuxedo/img8.png",
+            "title": "/ Платье-смокинг длинное",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 8,
+            "img": "/catalog/tuxedo/img9.png",
+            "title": "/ Белый смокинг и брюки с лампасами",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 9,
+            "img": "/catalog/tuxedo/img10.png",
+            "title": "/ Классический комплект с бабочкой",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 10,
+            "img": "/catalog/tuxedo/img13.png",
+            "title": "/ Топ с кружевом черный",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 11,
+            "img": "/catalog/tuxedo/img14.png",
+            "title": "/ Юбка - карандаш",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 12,
+            "img": "/catalog/tuxedo/img15.png",
+            "title": "/ Блуза с баской",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 13,
+            "img": "/catalog/tuxedo/img16.png",
+            "title": "/ Брюки зауженные",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 14,
+            "img": "/catalog/tuxedo/img17.png",
+            "title": "/ Жакет-смокинг с лацканами",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 15,
+            "img": "/catalog/tuxedo/img18.png",
+            "title": "/ Красный приталенный смокинг",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 16,
+            "img": "/catalog/tuxedo/img20.png",
+            "title": "/ Костюм бархатый",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 17,
+            "img": "/catalog/tuxedo/img21.png",
+            "title": "/ Жакет-смокинг с лацканами",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        },
+        {
+            "id": 18,
+            "img": "/catalog/tuxedo/img22.png",
+            "title": "/ Жакет-смокинг с лацканами",
+            "image": "/catalog/Vector.png",
+            "price": 23900,
+            "category": "tuxedo",
+            "text": "Подчеркнет линию талии"
+            
+        }
+    ]
+}
