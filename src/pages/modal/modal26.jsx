@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
@@ -123,7 +122,7 @@ const Modal26 = () => {
                     </div>
                     <div className='md25__form-bottom'>
                         <label className='md25__form-bottom_policy'>
-                            <input type="checkbox" required
+                            <input type="checkbox" 
                             name='checked'
                             {...register('checked')}
                             className={`${errors.checked ? 'error' : ''}`}
