@@ -1,12 +1,13 @@
 .container-slider {
   height: 800px;
+  width: 100%;
   position: relative;
   overflow: hidden;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
 }
-@media screen and (max-width: 700px){
+
+@media screen and (max-width: 425px){
   .container-slider {
-    margin: 100px 10px 0;
+    margin: 100px -10px 0;
   }
 }
 .slide {
@@ -52,8 +53,6 @@
   right: 20px;
   transform: translateY(-60%);
 }
-
-
 .container-dots {
   position: absolute;
   bottom: 10px;
@@ -71,4 +70,10 @@
 }
 .dot.active {
   background: rgb(32, 32, 32);
+}
+@media(max-width:425px){
+  .begin{
+    margin-left: -10px;
+    margin-top: -100px;
+  }
 }

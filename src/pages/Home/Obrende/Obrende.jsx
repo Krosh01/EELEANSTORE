@@ -1,6 +1,5 @@
 import React from 'react';
 import obrendebg from '../../../assets/obrende/obrendebg.png'
-// import arrowright from '../../../assets/Footer/arrowrightFooter.svg'
 import arrowright from '../../../assets/obrende/Group 1452.svg'
 
 
@@ -12,7 +11,6 @@ const Obrende = () => {
                 <div className="Obrende_LR">
                     <div className="Obrende_left">
                         <img className='Wslide1' src={obrendebg} alt="/" />
-                     
                     </div>
                     <div className="Obrende_right">
                         <p className='Obrende_rightp1'>
@@ -42,11 +40,9 @@ const Obrende = () => {
                         <div className="Obrende_MOre">
                             <p>Подробнее \</p>
                             <img src={arrowright} alt="" />
-
                         </div>
                     </div>
                 </div>
-              
             </div>
         </section>
     );

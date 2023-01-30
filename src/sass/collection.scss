@@ -40,5 +40,54 @@
     margin-left: 15px;
 }
 .collection p{
-    padding-top: 20px;
-}   
+    padding-top: 40px;
+    transform: translate(0,-10px);
+}
+@media (max-width: 425px){
+    .container{
+        max-width:700px;
+        margin: 0 auto;
+        padding: 19px 20px;
+    }
+    .collection_inner_top{
+        display: block;
+    }
+    .colliction_left_down{
+        display: block;
+    }
+    .collection_inner{
+        margin-left: -20px;
+    }
+    .adaptivka_img{
+        width: 375px;
+        height: 470px;
+    }
+    .collection_right_up{
+        display: block;
+        margin-left: -15px;
+    }
+    .collection_inner_down{
+        display: block;  
+    }
+    .collection_inner_down_left{
+        display: block;
+    }
+    .collection_inner_down_right{
+        display: block;
+    }
+    .collection_inner_down_img1{
+        margin-left: 15px;
+    }
+    .collection_inner_down_img2{
+        margin-left: 15px;
+    }
+    .collection_inner_down_img3{
+        margin-left: -30px;
+    }
+    .collection_inner_down_img4{
+        margin-left: -30px;
+    }
+    .colliction_right_down{
+        margin-left: -15px;
+    }
+}

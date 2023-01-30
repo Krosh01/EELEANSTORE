@@ -6,7 +6,6 @@ import { RiErrorWarningLine } from 'react-icons/ri'
 import ContactQuestion from '../../Components/ContactsQuestion/ContactQuestion'
 
 const Contact = () => {
-
     const hStyle = {
         fontWeight: "400",
         fontSize: "21px",
@@ -17,7 +16,6 @@ const Contact = () => {
         textTransform: "uppercase",
         padding: "40px"
     }
-
     const pStyle = {
         fontWeight: "400",
         fontSize: "15px",
@@ -25,12 +23,10 @@ const Contact = () => {
         letterSpacing: "0.05em",
         color: "#000000"
     }
-
     const iconStyles = {
         fill: "#C0A78F",
         fontSize : "24px"
     }
-
     return (
         <div className='container'>
             <h1 style={hStyle}>Контакты</h1>

@@ -34,8 +34,38 @@
 }
 .Obrende_MOre{
   display: flex;
-  color: #C0C0C0;
+  color: #C0C0C0; 
 }
 .Obrende_MOre p{
   color: #C0C0C0;
+}
+@media(max-width:425px){
+  .Obrende_LR{
+  display: block;
+  }
+  .Wslide1{
+    width: 600px;
+    height: 250px;
+    margin-top: 350px ;
+    transform: translate(-100px,-60px);
+  }
+  .Obrende_rightp1{
+    width: 313px;
+    height: 150px;
+    transform: translate(380px,-720px);
+  }
+  .Obrende_rightp2{
+    width: 313px;
+    height: 150px;
+    transform: translate(380px,-720px);
+  }
+  .Obrende_rightp3{
+    margin-top: -300px;
+    width: 313px;
+    height: 150px;
+    transform: translate(380px,-200px);
+  }
+  .Obrende_MOre{
+    transform: translate(380px,-150px);
+  }
 }

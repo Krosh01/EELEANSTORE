@@ -28,3 +28,9 @@
         }
     }
 }
+@media(max-width:425px){
+    .Instagram_inner_row{
+        overflow-y: scroll;
+        justify-content: start;
+    }
+}
