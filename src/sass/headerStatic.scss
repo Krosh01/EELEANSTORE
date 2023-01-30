@@ -35,8 +35,12 @@
         padding-left: 24px;
     }
 }
-
 .stycky-nav {
     top: 0;
     transition: .6s ease;
+}
+@media (max-width: 425px){
+    .headerS{
+        display: none;
+    }
 }

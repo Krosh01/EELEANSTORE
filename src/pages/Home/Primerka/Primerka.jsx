@@ -23,8 +23,8 @@ const Primerka = () => {
                 <h1>ЗАПИСАТЬСЯ НА ПРИМЕРКУ В ШОУРУМЕ</h1>
                 <div className="Primerka_input_row1">
                     <input  onChange={(e) => setName(e.target.value)} value={name}  className='Primerka_input' type="text" placeholder=' ВВЕДИТЕ ИМЯ' />
-                    <input  onChange={(e) => setPhone(e.target.value)} value={phone}  className='Primerka_input' type="text" placeholder='ВВЕДИТЕ ТЕЛЕФОН' />
-                    <input  onChange={(e) => setTime(e.target.value)} value={time}  className='Primerka_input' type="text" placeholder='ВВЕДИТЕ УДОБНОЕ ВРЕМЯ' />
+                    <input  onChange={(e) => setPhone(e.target.value)} value={phone}  className='Primerka_input1' type="text" placeholder='ВВЕДИТЕ ТЕЛЕФОН' />
+                    <input  onChange={(e) => setTime(e.target.value)} value={time}  className='Primerka_input2' type="text" placeholder='ВВЕДИТЕ УДОБНОЕ ВРЕМЯ' />
                 </div>
                 <div className="Primerka_input_row2">
                     <input  onChange={(e) => setComment(e.target.value)} value={comment} className='Primerka_input_coment' type="text" placeholder='ДОБАВИТЬ КОММЕНТАРИЙ' />

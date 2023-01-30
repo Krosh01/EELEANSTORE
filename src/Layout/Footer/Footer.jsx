@@ -30,12 +30,12 @@ const Footer = () => {
             <div className="Footer_Middle">
               <div className="Footer_nav">
                 <ul>
-                  <li> <Link to='deliver'>ДОСТАВКА</Link> </li>
-                  <li>ОПЛАТА</li>
-                  <li>ВОЗВРАТ</li>
-                  <li>РАЗМЕРНАЯ</li>
-                  <li><Link to="Primerka">ПРИМЕРКА</Link></li>
-                  <li>КОНТАКТЫ</li>
+                  <li><Link to='deliver'> <a href="">ДОСТАВКА</a> </Link> </li>
+                  <li><Link to='/'> <a href="">ОПЛАТА</a> </Link> </li>
+                  <li><Link to='/'> <a href="">ВОЗВРАТ</a> </Link> </li>
+                  <li><Link to='/'> <a href="">РАЗМЕРНАЯ</a> </Link> </li>
+                  <li><Link to="Primerka"> <a href="">ПРИМЕРКА</a> </Link></li>
+                  <li><Link to='Contact'> <a href="">КОНТАКТЫ</a> </Link></li>
                 </ul>
               </div>
               <div className="Footer_Information">

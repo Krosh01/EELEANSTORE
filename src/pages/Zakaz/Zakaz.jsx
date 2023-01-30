@@ -5,7 +5,6 @@ const Zakaz = () => {
     <section className='Zakaz'>
         <div className="container">
             Zakas
-
         </div>
     </section>
   )

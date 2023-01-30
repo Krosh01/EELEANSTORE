@@ -6,8 +6,6 @@
     justify-content: center;
     font-weight: 400px; 
     font-size: 21px;
-    // width: 100px;
-    // height: 100px;
 }
 .Shouroom h1::after{
     content: '';
@@ -40,4 +38,21 @@
     height: 550px;
     width: 435px;
     margin-top: -30px;
+}
+@media (max-width:425px){
+    .Shouroom_photo_row{
+        display: block;
+        margin-top: 40px;
+    }
+    .Shouroom_img1{
+        margin-left: -20px;
+        width: 374px;
+        height: 512px;
+    }
+    .Shouroom_img2{
+        display: none;
+    }
+    .Shouroom_img3{
+      display: none;
+    }
 }

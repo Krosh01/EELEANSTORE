@@ -30,7 +30,22 @@
     border: 1px solid black;
     background-color: #FAFAFA;
     color: black;
-
+}
+.Primerka_input1{
+    height: 60px;
+    width: 305px;
+    padding: 0 0 0 10px;
+    border: 1px solid black;
+    background-color: #FAFAFA;
+    color: black;
+}
+.Primerka_input2{
+    height: 60px;
+    width: 305px;
+    padding: 0 0 0 10px;
+    border: 1px solid black;
+    background-color: #FAFAFA;
+    color: black;
 }
 .Primerka_input_row2{
     display: flex;
@@ -45,7 +60,6 @@
     background-color: #FAFAFA;
     color: black;
 }
-
 .Primerka_button {
     cursor: pointer;
     min-width: 180px;
@@ -67,11 +81,59 @@
     &:hover{
         background-color: #000000;
         color: #fff;
-
     }
-
 }
-
+@media (max-width:425px){
+    .Primerka_inner{
+        height: 600px;
+    }
+    .Primerka_input_row1{
+        display: block;
+        margin-left: 15px;
+    }
+    .Primerka_input{
+        height: 60px;
+        width: 304px;
+        padding: 0 0 0 10px;
+        border: 1px solid black;
+        background-color: #FAFAFA;
+        color: black;
+    }
+    .Primerka_input1{
+        height: 60px;
+        width: 304px;
+        padding: 0 0 0 10px;
+        border: 1px solid black;
+        background-color: #FAFAFA;
+        color: black;
+        margin-top: 10px;
+    }
+    .Primerka_input2{
+        height: 60px;
+        width: 304px;
+        padding: 0 0 0 10px;
+        border: 1px solid black;
+        background-color: #FAFAFA;
+        color: black;
+        margin-top: 10px;
+    }
+    .Primerka_input_coment{
+        height: 60px;
+        width: 304px;
+        margin-left: 15px;
+        margin-top: -10px;
+    }
+    .Primerka_button{
+        width: 221px;
+        height: 45px;
+        margin-top: 10px;
+        margin-left: 98px;
+        border: 1px solid #000000;
+    }
+    .Primerka_input_row2{
+        display: block;
+    }
+}
 
 
 

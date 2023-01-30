@@ -9,18 +9,14 @@
     font-family: 'Lato', sans-serif;
     color: #000;
 }
-
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
-
 .container {
     max-width: 1350px;
     margin: 0 auto;
     padding: 19px 20px;
 }
-
 @import './header.scss';
 @import './deliver.scss';
 @import './headerStatic.scss';

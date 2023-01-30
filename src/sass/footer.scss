@@ -34,6 +34,11 @@
   font-size: 14px;
   font-weight: 500;
 }
+.Footer_nav ul li a:hover{
+  color: #D7B494;
+  transition: 0.3s;
+  cursor: pointer;
+}
 .Footer_Information{
   display: flex;
   margin-top: 54px;
@@ -94,5 +99,68 @@
   margin-top: 10px;
 }
 .Footer_checkbox{
-  border: 1px solid #D7B494;
+  border: 1px dotted #D7B494;
+  background-color: #D7B494;
+  border-radius:50%;
+}
+
+@media(max-width:425px){
+  .Footer_inner{
+    display: block;
+  }
+  .Footer_icon{
+    margin-top: -50px;
+  }
+  .FooterAppContact:nth-child(2n){
+    margin-top:10px;
+  }
+  .FooterAppContact p{
+    margin-top:20px
+  }
+  .FooterEmail{
+    margin-top: 20px;
+  }
+  .Footer_nav ul {
+    display: block;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+    gap: 25px;
+  }
+  .Footer_nav ul li {
+    font-size: 20px;
+    font-weight: 500px;
+    margin-top: 10px;
+  }
+  .Footer_nav ul:hover {
+    color: #D7B494;
+  }
+  .Footer_nav ul li:nth-child(4) {
+    margin-left: 215px;
+    margin-top: -90px;
+  }
+  .Footer_nav ul li:nth-child(5) {
+    margin-left: 215px;
+  }
+  .Footer_nav ul li:nth-child(6) {
+    margin-left: 215px;
+  }
+  .Footer_Information{
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    justify-content: center;
+  }
+  .FooterAdress{
+    display: block;
+  }
+  .Footer_input{
+    width: 334px;
+  }
+  .Footer_input2{
+    width: 334px;
+  }.Footer_Subscribe_button{
+    width: 334px;
+  }
 }

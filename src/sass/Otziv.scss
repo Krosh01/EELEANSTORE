@@ -54,3 +54,32 @@
         }
     }
 }
+@media (max-width:425px){
+    .Otziv{
+        margin-top: -80px;
+        &_inner{
+            display: block;
+            &_l_content{
+                display: block;
+            }
+            &_l_icon{
+                transform: translate(0,30px);
+            }
+            &_l_coment{
+                &_p{
+                    display: flex;
+                    justify-content: center;
+                    transform: translate(40px,0);
+                    gap: 70px;
+                    color: #B6B6B6;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+                &_text {
+                    height: 138px;
+                    width: 340px;
+                }
+            }
+        }
+    }
+}

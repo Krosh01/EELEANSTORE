@@ -19,33 +19,33 @@ const Collection = () => {
                         <div className="collection_left">
                             <div className="collection_left_up">
                                 <p>Новинки</p>
-                                <img src={collect1} alt="" />
+                                <img className='adaptivka_img' src={collect1} alt="" />
                             </div>
                             <div className="colliction_left_down">
                                 <div className="left_down_img">
                                     <p>Смокиниги</p>
-                                    <img src={collect2} alt="" />
+                                    <img className='adaptivka_img'  src={collect2} alt="" />
                                 </div>
                                 <div className="left_down_img">
                                     <p>Брюки</p>
-                                    <img src={collect3} alt="" />
+                                    <img className='adaptivka_img' src={collect3} alt="" />
                                 </div>
                             </div>
                         </div>
                         <div className="collection_right">
                             <div className="collection_right_up" >
-                                <div className="right_down_img">
+                                <div  className="right_down_img">
                                     <p>Акции</p>
-                                    <img src={collect4} alt="" />
+                                    <img className='adaptivka_img' src={collect4} alt="" />
                                 </div>
                                 <div className="right_down_img">
                                     <p>Костюмы</p>
-                                    <img src={collect5} alt="" />
+                                    <img className='adaptivka_img' src={collect5} alt="" />
                                 </div>
                             </div>
                             <div className="colliction_right_down">
                                 <p>Платья</p>
-                                <img src={collect6} alt="" />
+                                <img className='adaptivka_img' src={collect6} alt="" />
                             </div>
                         </div>
                     </div>    
@@ -53,21 +53,21 @@ const Collection = () => {
                         <div className="collection_inner_down_left">
                             <div className="collection_inner_down_img1">
                                 <p>Блузы</p>
-                                <img src={collect7} alt="" />
+                                <img className='adaptivka_img' src={collect7} alt="" />
                             </div>
                             <div className="collection_inner_down_img2">
                                 <p>Юбки</p>
-                                <img src={collect8} alt="" />
+                                <img className='adaptivka_img' src={collect8} alt="" />
                             </div>
                         </div>
                         <div className="collection_inner_down_right">
                             <div className="collection_inner_down_img3">
                                 <p>Топы и жилеты</p>
-                                <img src={collect08} alt="" />
+                                <img className='adaptivka_img' src={collect08} alt="" />
                             </div>
                             <div className="collection_inner_down_img4">
                                 <p>Аксессуары</p>
-                                <img src={collect9} alt="" />
+                                <img className='adaptivka_img' src={collect9} alt="" />
                             </div>
                         </div>
                     </div>
