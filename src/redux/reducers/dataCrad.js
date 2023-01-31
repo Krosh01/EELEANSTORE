@@ -4,7 +4,8 @@ const coin = {
                 id: 1,
                 title: 'Брюки клёш',
                 size: 48,
-                price: '20 000₽',
+                price: 20000,
+                underPrice: 20000,
                 count:1,
                 image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/osen22/06cad9e1-f89a-4c70-a345-87e97190428b-150x200.jpeg'
             },
@@ -12,23 +13,26 @@ const coin = {
                 id: 2,
                 title: 'Брюки клёш',
                 size: 50,
-                price: '10 000₽',
+                price: 10000,
+                underPrice: 10000,
                 count:1,
                 image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/osen22/06cad9e1-f89a-4c70-a345-87e97190428b-150x200.jpeg'
             },
             {
                 id: 3,
                 title: 'Брюки клёш',
-                size: 90,
-                price: '200₽',
+                size: 50,
+                price: 20900,
+                underPrice: 20900,
                 count:1,
-                image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/osen22/06cad9e1-f89a-4c70-a345-87e97190428b-150x200.jpeg'
+                image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean06130-150x200.jpg'
             },
             {
                 id: 4,
                 title: 'Брюки клёш',
-                size: 100,
-                price: '90 000₽',
+                size: 49,
+                price: 20900,
+                underPrice: 20900,
                 count:1,
                 image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg'
             }
@@ -51,15 +55,29 @@ export default (state = coin, action) => {
         case "ADD_PRICE": {
             return {
                 ...state,
-                task: state.task.map(item => {
-                if(item.id === action.id) {
-                item.price = action.price
-                }
-                return item;
+                task: state.task.map((item) => {
+                    if(item.id === action.id) {
+                        item.price = item.price * 2
+                        item.count = item.count + 1
+                    }
+                    return item
                 }),
-                taskCount: state.taskCount + 1
             }
-            
+        }
+        case "MINUS_PRICE": {
+            return {
+                ...state,
+                task: state.task.map((item) => {
+                    if(item.id === action.id) {
+                        item.price = item.price / 2
+                        item.count = item.count - 1
+                    }if(item.count < 1) {
+                        item.price = item.price = item.underPrice
+                        item.count = item.count = 1
+                    }
+                    return item
+                }),
+            }
         }
         default:return state
     }
@@ -71,8 +89,14 @@ export const deleteTask = (id) => {
     }
 }
 
-export const addPrice = (price,id,task) => {
+export const addPrice = (id) => {
     return (dispath) => {
-        return dispath({type: 'ADD_PRICE', id,task, price: price * 2})
+        return dispath({type: 'ADD_PRICE', id})
     }
-}   
+}
+
+export const deletePrice = (id) => {
+    return (dispath) => {
+        return dispath({type: 'MINUS_PRICE', id})
+    }
+}
