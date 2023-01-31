@@ -13,17 +13,17 @@ const coin = {
                 id: 2,
                 title: 'Брюки клёш',
                 size: 50,
-                price: 10000,
-                underPrice: 10000,
+                price: 11000,
+                underPrice: 11000,
                 count:1,
-                image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/osen22/06cad9e1-f89a-4c70-a345-87e97190428b-150x200.jpeg'
+                image: 'https://eleanboutique.ru/image/cache/catalog/novinki2021/eleancyclo2702-150x200.jpg'
             },
             {
                 id: 3,
                 title: 'Брюки клёш',
                 size: 50,
-                price: 20900,
-                underPrice: 20900,
+                price: 17800,
+                underPrice: 17800,
                 count:1,
                 image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean06130-150x200.jpg'
             },
