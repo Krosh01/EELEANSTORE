@@ -1,6 +1,6 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { useSelector } from 'react-redux'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import store from '../../redux'
 import { CustomContext } from '../../utils/context'
 import BasketItem from './basketAssets/basketItem'

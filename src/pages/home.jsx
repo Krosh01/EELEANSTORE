@@ -1,12 +1,12 @@
 import React from 'react'
-import Basket from './basket/basket'
 import Deliver from './deliver/deliver copy'
+import Modal24 from './modal/modal24'
 
 const Home = () => {
   return (
     <main className='wrapper'>
       {/* <Deliver/> */}
-      <Basket/>
+      <Modal24/>
     </main>
   )
 }

@@ -36,8 +36,7 @@ const coin = {
                 count:1,
                 image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg'
             }
-        ],
-        taskCount: 4
+        ]
 }
 
 
@@ -48,8 +47,7 @@ export default (state = coin, action) => {
                 ...state,
                 task: state.task.filter(item => {
                     return item.id !== action.id
-                }),
-                taskCount: state.taskCount - 1
+                })
             }
         }
         case "ADD_PRICE": {
@@ -57,7 +55,7 @@ export default (state = coin, action) => {
                 ...state,
                 task: state.task.map((item) => {
                     if(item.id === action.id) {
-                        item.price = item.price * 2
+                        item.price = item.price + item.underPrice
                         item.count = item.count + 1
                     }
                     return item
@@ -69,7 +67,7 @@ export default (state = coin, action) => {
                 ...state,
                 task: state.task.map((item) => {
                     if(item.id === action.id) {
-                        item.price = item.price / 2
+                        item.price = item.price - item.underPrice
                         item.count = item.count - 1
                     }if(item.count < 1) {
                         item.price = item.price = item.underPrice

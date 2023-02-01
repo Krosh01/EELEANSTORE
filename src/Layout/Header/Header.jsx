@@ -9,7 +9,7 @@ import { CustomContext } from '../../utils/context';
 const Header = () => {
 
   const{basket, setBasket} = useContext(CustomContext)
-  const taskCount = useSelector((store) => store.task.taskCount)
+  const totalCount = useSelector((store) => store.task.task.reduce((asc, item) => asc + item.count,0))
 
 
   return (
@@ -80,7 +80,7 @@ const Header = () => {
                         <path d="M3.75879 4.50195H19.499V20.8598H3.75879V4.50195Z" stroke="black" stroke-miterlimit="3.8637"/>
                         <path d="M9.12598 6.27259C9.12598 6.27259 9.12598 4.90562 9.12598 3.47365C9.12598 2.04167 10.3329 0.880859 11.8218 0.880859C13.3108 0.880859 14.5177 2.04167 14.5177 3.47365C14.5177 4.90562 14.5177 6.27259 14.5177 6.27259" stroke="#333333" stroke-miterlimit="3.8637"/>
                       </svg>
-                      <p className='header__nav-count'>{taskCount}</p>
+                      <p className='header__nav-count'>{totalCount}</p>
                     </a>
                   </li>
                 </ul>
