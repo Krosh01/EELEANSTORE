@@ -31,8 +31,8 @@ const Footer = () => {
               <div className="Footer_nav">
                 <ul>
                   <li><Link to='deliver'> <a href="">ДОСТАВКА</a> </Link> </li>
-                  <li><Link to='/'> <a href="">ОПЛАТА</a> </Link> </li>
-                  <li><Link to='/'> <a href="">ВОЗВРАТ</a> </Link> </li>
+                  <li><Link to='/pay'> <a href="">ОПЛАТА</a> </Link> </li>
+                  <li><Link to='/voz'> <a href="">ВОЗВРАТ</a> </Link> </li>
                   <li><Link to='/'> <a href="">РАЗМЕРНАЯ</a> </Link> </li>
                   <li><Link to="Primerka"> <a href="">ПРИМЕРКА</a> </Link></li>
                   <li><Link to='Contact'> <a href="">КОНТАКТЫ</a> </Link></li>

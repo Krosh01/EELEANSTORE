@@ -1,0 +1,42 @@
+.headerS {
+    position: fixed;
+    transition: .6s ease;
+    top: -100px;
+    background-color: #fff;
+    width: 100%;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icons {
+        display: flex;
+        align-items:center;
+        column-gap: 25px;
+        &-burger {
+            margin-right: 17px;
+        }
+    }
+    &__item {
+        display: flex;
+        column-gap: 35px;
+        font-size: 14px;
+    	font-family: 'FuturaBookC';
+        margin-right: 42px;
+    }
+    &__basket {
+        display: flex;
+        column-gap: 15px;
+    }
+    &__count {
+        font-size: 13px;
+        font-weight: 700;
+        position: absolute;
+        top: 7px;
+        padding-left: 24px;
+    }
+}
+
+.stycky-nav {
+    top: 0;
+    transition: .6s ease;
+}

@@ -8,7 +8,11 @@ import Like from './pages/Like/Like';
 import Zakaz from './pages/Zakaz/Zakaz';
 import './sass/style.scss'
 import Primerka from './pages/Primerka/Primerka';
+import Obmen from './pages/deliver/obmen';
 // import YandexMaps from './Components/YandexMaps/YandexMaps';
+import Voz from './pages/deliver/voz';
+import Pay from './pages/deliver/pay';
+import Modal24 from './pages/modal/modal24';
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
         <Route path='showRoom' element={<ShowRoom/>}/>
         <Route path='Primerka' element={<Primerka/>}/>
         <Route path='zakaz' element={<Zakaz/>}/>
+        <Route path='obmen' element={<Obmen/>}/> 
+        <Route path='voz' element={<Voz/>}/> 
+        <Route path='pay' element={<Pay/>}/> 
+        <Route path='size' element={<Modal24/>}/> 
       </Route>
     </Routes>
     </>
