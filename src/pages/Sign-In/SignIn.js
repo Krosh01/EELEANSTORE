@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
+import Home from "../Home/Home";
+import Contact from "../Contact/Contact";
 
 const SignIn = () => {
     const [err, setErr] = useState(false);
@@ -31,7 +33,9 @@ const SignIn = () => {
                         <Link to="/signup">Нет Аккаунта?</Link>
                         <Link to="/signup">Зарегайся!</Link>
                     </div>
-                    <button>Войти</button>
+                    <button
+                        
+                    >Войти</button>
                     {err && <span>Что-то Пошло Не Так! ☹</span>}
                 </form>
             </div>

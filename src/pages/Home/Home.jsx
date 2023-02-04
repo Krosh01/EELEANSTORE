@@ -7,8 +7,10 @@ import Shouroom from './Shouroom/Shouroom';
 import Star from './Star/Star'
 import Otziv from './Otziv/Otziv'
 import Instagram from './Instagram/Instagram';
+import { Navigate } from 'react-router-dom';
 
 const Home = () => {
+
     return (
         <main>
             <Begin />
@@ -20,6 +22,6 @@ const Home = () => {
             <Otziv />
             <Instagram />
         </main>
-    );
+    )
 };
 export default Home;

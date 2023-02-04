@@ -1,7 +1,7 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const [err, setErr] = useState(false);
@@ -32,9 +32,15 @@ const SignUp = () => {
                     <input required type="password" placeholder="Придумай новый пароль" />
                     <div className="links">
                         <Link to="/signin">У Тебя Есть Аккаунт?</Link>
-                        <Link to="/signin">Войди!</Link>
+                        <Link to="/">Войди!</Link>
                     </div>
-                    <button>Зарегаться</button>
+                    <button
+                        onClick={() => {
+                            return (
+                                <Navigate to='/' />
+                            )
+                        }}
+                    >Зарегаться</button>
                     {err && <span>Что-то пошло не так...</span>}
                 </form>
             </div>

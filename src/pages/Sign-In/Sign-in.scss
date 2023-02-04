@@ -2,25 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background: linear-gradient(90deg , rgb(251, 251, 72) 60% , rgb(85, 85, 159) 40%);
     height: 100vh;
-    background: -moz-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* opera 11.10+ */
-    background: -o-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D3D3D3', endColorstr='#FFFFFF', GradientType=1);
-
-    /* ie 10+ */
-    background: -ms-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* global 94%+ browsers support */
-    background: linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
+    background: #E1C4A9;
 
     .box {
         width: 600px;

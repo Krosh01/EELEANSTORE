@@ -14,24 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background: #e0bea2;
-
-    background: -moz-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* safari 5.1+,chrome 10+ */
-    background: -webkit-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* opera 11.10+ */
-    background: -o-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D3D3D3', endColorstr='#FFFFFF', GradientType=1);
-
-    /* ie 10+ */
-    background: -ms-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
-
-    /* global 94%+ browsers support */
-    background: linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
+    background: #E1C4A9;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;

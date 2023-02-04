@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { useState, useEffect } from 'react'
 import Basket from './../../pages/basket/basket';
 import { CustomContext } from '../../utils/context';
-
+import { BsPeople } from 'react-icons/bs'
 
 const HeaderStatic = () => {
 
@@ -99,6 +99,9 @@ const HeaderStatic = () => {
                   </svg>
                   <p className='headerS__count'>{totalCount}</p>
                 </Link>
+              </li>
+              <li>
+                <Link to="userpage"><BsPeople style={{ fontSize: "24px" }} /></Link>
               </li>
             </ul>
           </li>

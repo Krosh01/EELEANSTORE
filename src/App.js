@@ -12,21 +12,11 @@ import Obmen from './pages/deliver/obmen';
 import Voz from './pages/deliver/voz';
 import Pay from './pages/deliver/pay';
 import Modal24 from './pages/modal/modal24';
-import { useContext } from 'react';
-import { Navigate } from 'react-router';
-import { AuthContext } from './utils/AuthContext';
 import SignUp from './pages/Sign-Up/SignUp';
 import SignIn from './pages/Sign-In/SignIn';
+import UserPage from './pages/UserPage/UserPage';
 
 function App() {
-  const { currentUser } = useContext(AuthContext);
-
-  const ProtectedRoute = ({ children }) => {
-    if (!currentUser) {
-      return <Navigate to="/signin" />;
-    }
-    return children;
-  };
 
   return (
     <>
@@ -46,6 +36,7 @@ function App() {
         </Route>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path='/userpage' element={<UserPage />} />
       </Routes>
     </>
   );

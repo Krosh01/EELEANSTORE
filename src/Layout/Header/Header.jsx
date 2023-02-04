@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Basket from './../../pages/basket/basket';
 import { CustomContext } from '../../utils/context';
+import { BsPeople } from 'react-icons/bs'
 
 const Header = () => {
 
@@ -80,6 +81,9 @@ const Header = () => {
                   </svg>
                   <p className='header__nav-count'>{totalCount}</p>
                 </a>
+              </li>
+              <li>
+                <Link to="userpage"><BsPeople style={{fontSize: "24px"}}/></Link>
               </li>
             </ul>
           </li>

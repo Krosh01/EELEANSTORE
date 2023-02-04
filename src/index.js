@@ -20,4 +20,3 @@ root.render(
         </BrowserRouter>
     </AuthContextProvider>
 );
-
