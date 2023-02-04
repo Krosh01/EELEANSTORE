@@ -9,20 +9,30 @@ import Zakaz from './pages/Zakaz/Zakaz';
 import './sass/style.scss'
 import Primerka from './pages/Primerka/Primerka';
 import Obmen from './pages/deliver/obmen';
-// import YandexMaps from './Components/YandexMaps/YandexMaps';
 import Voz from './pages/deliver/voz';
 import Pay from './pages/deliver/pay';
 import Modal24 from './pages/modal/modal24';
-import LoginPage from './pages/Auth/LoginPage';
-import RegisterPage from './pages/Auth/RegisterPage';
-import HomePage from './pages/Home/HomePage';
+import { useContext } from 'react';
+import { Navigate } from 'react-router';
+import { AuthContext } from './utils/AuthContext';
+import SignUp from './pages/Sign-Up/SignUp';
+import SignIn from './pages/Sign-In/SignIn';
 
 function App() {
+  const { currentUser } = useContext(AuthContext);
+
+  const ProtectedRoute = ({ children }) => {
+    if (!currentUser) {
+      return <Navigate to="/signin" />;
+    }
+    return children;
+  };
+
   return (
     <>
       <Routes>
         <Route path='' element={<Layout />}>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/' element={<Home />} />
           <Route path='deliver' element={<Deliver />} />
           <Route path='like' element={<Like />} />
           <Route path='Contact' element={<Contact />} />
@@ -34,8 +44,8 @@ function App() {
           <Route path='pay' element={<Pay />} />
           <Route path='size' element={<Modal24 />} />
         </Route>
-        <Route path='/login' element={<LoginPage />} />
-        <Route path='/register' element={<RegisterPage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </>
   );

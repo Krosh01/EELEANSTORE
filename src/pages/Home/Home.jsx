@@ -1,26 +1,25 @@
-
-import { Navigate } from 'react-router-dom';
-import { useAuth } from '../../hooks/use-auth'
-import { useDispatch } from 'react-redux';
-import HomePage from './HomePage';
-import { removeUser } from '../../store/slices/useSlice';
+import React from 'react';
+import Begin from './Begin/Begin'
+import Collection from "./Collection/Collection";
+import Obrende from './Obrende/Obrende';
+import Primerka from './Primerka/Primerka';
+import Shouroom from './Shouroom/Shouroom';
+import Star from './Star/Star'
+import Otziv from './Otziv/Otziv'
+import Instagram from './Instagram/Instagram';
 
 const Home = () => {
-
-    const dispatch = useDispatch()
-    const { isAuth, email } = useAuth()
-
-    return isAuth ? (
-        <>
-            <HomePage />
-            <button onClick={dispatch(removeUser())}>
-                log out from {email}
-            </button>
-        </>
-    ) : (
-        <>
-            <Navigate to="/login" />
-        </>
+    return (
+        <main>
+            <Begin />
+            <Collection />
+            <Obrende />
+            <Shouroom />
+            <Primerka />
+            <Star />
+            <Otziv />
+            <Instagram />
+        </main>
     );
 };
 export default Home;
