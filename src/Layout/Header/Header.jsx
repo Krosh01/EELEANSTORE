@@ -6,7 +6,6 @@ import Basket from './../../pages/basket/basket';
 import { CustomContext } from '../../utils/context';
 import { BsPeople } from 'react-icons/bs'
 
-
 const Header = () => {
 
   const { basket, setBasket } = useContext(CustomContext)
@@ -84,7 +83,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <Link to="userpage"><BsPeople style={{fontSize: "24px"}}/></Link>
+                <Link to="userpage"><BsPeople style={{ fontSize: "24px" }} /></Link>
               </li>
             </ul>
           </li>

@@ -15,11 +15,24 @@ import Modal24 from './pages/modal/modal24';
 import SignUp from './pages/Sign-Up/SignUp';
 import SignIn from './pages/Sign-In/SignIn';
 import UserPage from './pages/UserPage/UserPage';
+import { ThemeContext, themes } from './utils/ThemeContext';
+import Toggle from './Components/toggle'
 
 function App() {
 
   return (
     <>
+      <ThemeContext>
+        {({ theme, setTheme }) => (
+          <Toggle
+            onChange={() => {
+              if (theme === themes.light) setTheme(themes.dark)
+              if (theme === themes.dark) setTheme(themes.light)
+            }}
+            value={theme === themes.dark}
+          />
+        )}
+      </ThemeContext>
       <Routes>
         <Route path='' element={<Layout />}>
           <Route path='/' element={<Home />} />

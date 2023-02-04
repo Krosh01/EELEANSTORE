@@ -14,22 +14,30 @@ html {
     scroll-behavior: smooth;
 }
 
+:root[data-theme="light"] {
+    --background-color: #fafafa;
+}
+
+:root[data-theme="dark"] {
+    --background-color: #2b3e51;
+}
+
+html {
+    background: var(--background-color);
+}
+
 .container {
     max-width: 1350px;
     margin: 0 auto;
     padding: 19px 20px;
 }
 
-/* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
     width: 12px;
-    /* ширина для вертикального скролла */
     height: 8px;
-    /* высота для горизонтального скролла */
     background-color: #000000;
 }
 
-/* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
     background-color: #000000;
     border-radius: 9em;
@@ -39,8 +47,6 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #253861;
 }
-
-/* Стрелки */
 
 ::-webkit-scrollbar-button:vertical:start:decrement {
     background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
@@ -98,3 +104,4 @@ html {
 @import './basketItem.scss';
 @import '../pages/Sign-In/Sign-in.scss';
 @import '../pages/Sign-Up/Sign-Up.scss';
+@import '../Components/index.module.scss';
