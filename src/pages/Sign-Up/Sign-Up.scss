@@ -1,0 +1,138 @@
+@mixin mobile {
+    @media screen and (max-width: 570px) {
+        @content;
+    }
+}
+
+@mixin little {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+
+.wrapper-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background: #e0bea2;
+
+    background: -moz-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D3D3D3', endColorstr='#FFFFFF', GradientType=1);
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(176deg, rgba(255, 255, 255, 1) 0%, rgba(65, 212, 231, 1) 39%, rgba(211, 211, 211, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .box {
+        width: 600px;
+        height: 460px;
+        background-color: white;
+        text-align: center;
+
+        @include mobile {
+            width: 450px !important;
+        }
+
+        h1 {
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+            color: #252525;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            input {
+                width: 400px;
+                height: 50px;
+                border: 0.5px solid #252525;
+
+                @include mobile {
+                    width: 250px !important;
+                }
+
+                &::placeholder {
+                    font-family: "Raleway";
+                    font-style: normal;
+                    font-weight: 200;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: rgba(37, 37, 37, 0.5);
+                }
+            }
+
+            button {
+                width: 400px;
+                height: 50px;
+                background: #e0bea2;
+                border: none;
+
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffff;
+
+                @include mobile {
+                    width: 250px !important;
+                }
+            }
+
+            span {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 23px;
+                color: #252525;
+                position: relative;
+                bottom: 10px;
+            }
+        }
+
+        .links {
+            margin-top: 0px;
+
+            a {
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration-line: underline;
+                color: #252525;
+                margin-left: 96px;
+                margin-right: 93px;
+
+                @include little {
+                    display: block;
+                }
+            }
+        }
+    }
+}
