@@ -91,7 +91,7 @@ const Header = () => {
         <nav className='header__nav-bottom'>
           <li><a className='header__nav-bottom_link' href="#">SALE</a></li>
           <li><a className='header__nav-bottom_link' href="#">НОВИНИКИ</a></li>
-          <li><a className='header__nav-bottom_link' href="#">КАТЕГОРИИ</a> </li>
+          <li><Link className='header__nav-bottom_link' to="/Catalog">КАТЕГОРИИ</Link> </li>
           <li><a className='header__nav-bottom_link' href="#">НАШИ КОЛЛЕКЦИИ</a> </li>
           <li><a className='header__nav-bottom_link' href="#">ПОКУПАТЕЛЯМ</a> </li>
           <li><a className='header__nav-bottom_link' href="#">О БРЕНДЕ</a></li>

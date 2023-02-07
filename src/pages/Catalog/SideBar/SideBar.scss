@@ -1,0 +1,45 @@
+.sideBar {
+    &__lang-h3 {
+        padding: 38px 0;
+        font-weight: 700;
+        font-family: 'Cormorant', serif;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+
+    }
+
+    &_menu {
+        font-family: 'Cormorant', serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #222222;
+
+        &-item {
+            position: relative;
+
+            &.active,
+            &:hover {
+                color: #AE9177;
+            }
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #AE9177;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: scaleX(0);
+            }
+
+            &:hover:before {
+                transform: scaleX(1);
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.catalog {
+    padding: 69px 0 60px;
+
+    &__content {
+        display: flex;
+        column-gap: 25px;
+    }
+
+    &__right {
+        width: 75%;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog {
+        &__left {
+            display: none;
+        }
+
+        &-line {
+            margin-left: 20px;
+            width: 300px;
+            height: 1px;
+            background: #E6E6E6;
+        }
+    }
+
+}

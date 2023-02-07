@@ -1,0 +1,27 @@
+.categorytitle {
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #272727;
+    padding: 30px 0;
+}
+
+@media (max-width: 425px) {
+    .categorytitle {
+        text-align: left;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        color: #272727;
+        padding: 30px 10px;
+    }
+
+
+}
