@@ -1,0 +1,206 @@
+.about {
+    // padding: -40px 0;
+
+    .brand {
+        padding: 40px 0;
+
+        &-title {
+            font-family: 'FuturaBookC';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            text-align: center;
+            margin: 30px;
+        }
+
+        &-img {
+            width: 1338px;
+            height: 600px;
+            background: url('../../assets/About/image.jpg'), no-repeat;
+        }
+
+        &-text {
+            padding: 50px;
+            font-family: 'HelveticaNeueCyr';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            color: #171717;
+            columns: 570px 2;
+            column-gap: 50px;
+
+            &-title {
+                font-family: 'FuturaMediumC';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                letter-spacing: 0.05em;
+                color: #000000;
+            }
+
+            &-p {
+                text-align: left;
+                width: 570px;
+            }
+        }
+
+        &-block {
+            padding: 0 50px;
+            display: flex;
+            column-gap: 50px;
+
+            &-cards {
+                width: 590px;
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 25px;
+
+                &-title {
+                    font-family: 'FuturaMediumC';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                &-subtitle {
+                    font-family: 'HelveticaNeueCyr';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+
+    @media all and (max-width: 1200px) {
+        .brand-text-title {
+            margin-top: 47px;
+            text-align: center;
+        }
+    }
+
+    .our-adv {
+        padding: 70px 0;
+        background: #252831;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+
+        &-title {
+            font-family: 'FuturaMediumC';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        &-row {
+            margin-left: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 60px;
+        }
+
+        &-card {
+            width: 390px;
+            height: 160px;
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 30px;
+            padding: 0 25px;
+
+            &-text {
+                height: 74px;
+                font-family: 'HelveticaNeueCyr';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #C0A78F;
+            }
+        }
+    }
+
+
+}
+
+.registr {
+    font-family: 'FuturaMediumC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #9D9DAD;
+
+    &-block {
+        background: #fff;
+        width: 1338px;
+        padding: 37px 200px 45px;
+    }
+
+    &-icon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &-title {
+        font-family: 'FuturaBookC';
+        font-style: normal;
+        text-align: center;
+        font-weight: 400;
+        font-size: 21px;
+        margin: 23px 0 30px;
+        color: #000;
+    }
+
+    &-form {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-sections input {
+            padding: 20px;
+            border: 0.5px solid #000;
+            width: 312px;
+            height: 60px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        &-com {
+            margin-top: 20px;
+            padding: 20px;
+            display: block;
+            flex-grow: 1;
+            height: 100px;
+            letter-spacing: 0.06em;
+            border: 1px solid #000;
+        }
+
+        &-btn {
+            cursor: pointer;
+            margin-top: 20px;
+            width: 175px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000;
+            transition: 0.3s ease-in;
+
+            &:hover {
+                background-color: #000000;
+                color: #fff;
+            }
+        }
+    }
+
+    &-p {
+        font-size: 14px;
+        margin: 16px 0;
+        text-align: left;
+    }
+}

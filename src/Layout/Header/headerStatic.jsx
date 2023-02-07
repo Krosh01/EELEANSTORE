@@ -68,12 +68,12 @@ const HeaderStatic = () => {
           </li>
           <li>
             <ul className='headerS__item'>
-              <li><Link to='/'>НОВИНИКИ</Link></li>
-              <li><Link to='/'>КАТЕГОРИИ</Link></li>
-              <li><Link to='/'>НАШИ КОЛЛЕКЦИИ</Link></li>
+              <li><Link to='/Catalog'>НОВИНИКИ</Link></li>
+              <li><Link to='/Catalog'>КАТЕГОРИИ</Link></li>
+              <li><Link to='/Catalog'>НАШИ КОЛЛЕКЦИИ</Link></li>
               <li><Link to='/'><svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.87742 23.5611L0.972656 25.189V25.528H20.3814L21.3256 19.04L21.167 19.0219L17.1719 24.7654H7.64119V12.8184H13.0307L15.1684 16.1713H15.4731V8.79389H15.1684L13.0307 12.0558H7.64119V0.762617H15.9539L19.0231 6.48798H19.1875V0H0.972656V0.33902L3.87742 1.98531V23.5611Z" fill="black" /></svg></Link></li>
               <li><Link to='/'>ПОКУПАТЕЛЯМ</Link></li>
-              <li><Link to='/'>О БРЕНДЕ</Link></li>
+              <li><Link to='/Brand'>О БРЕНДЕ</Link></li>
               <li><Link to="showRoom">ШОУРУМ</Link></li>
               <li><Link to="Contact">КОНТАКТЫ</Link></li>
             </ul>
@@ -81,7 +81,7 @@ const HeaderStatic = () => {
           <li>
             <ul className='headerS__basket'>
               <li>
-                <Link to={'like'}>
+                <Link to={'Favorite'}>
                   <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.5769 4.24603C11.8813 3.62026 9.21613 1.37173 6.85609 1.39471C4.43734 1.41857 0.70379 3.00156 1.0187 7.69219C1.29714 11.8357 12.3919 20.3561 12.3919 20.3561C12.4613 20.4073 12.5334 20.4073 12.6081 20.3561C12.6081 20.3561 23.7029 11.8348 23.9813 7.69219C24.2962 3.00156 20.5627 1.41857 18.143 1.39471C15.4022 1.36819 12.2496 4.40512 12.2496 4.40512L10.1093 6.58736" stroke="#333333" stroke-miterlimit="3.8637" />
                   </svg>

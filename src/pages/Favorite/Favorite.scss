@@ -1,0 +1,94 @@
+.favorites {
+    &__title {
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        font-family: "FuturaBookC";
+        text-transform: uppercase;
+    }
+
+    &__content {
+        margin: 18px 0 40px;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 30px;
+    }
+
+    &__action {
+        &-title {
+            font-family: "FuturaBookC";
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 0.05em;
+            color: #000;
+        }
+
+        &-block {
+            display: flex;
+            margin-top: 30px;
+
+            @media(max-width:964px) {
+                flex-direction: column-reverse;
+            }
+
+            & a {
+                cursor: pointer;
+                font-family: "FuturaBookC";
+                width: 282px;
+                color: #828282;
+                border-radius: 3px;
+                letter-spacing: 0.1em;
+                font-weight: 600;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                text-transform: uppercase;
+
+                @media (max-width: 992px) {
+                    width: 100%;
+                    margin-top: 50px;
+                }
+
+                outline: none;
+                border: 1px solid #e3e3e3;
+                background-color: #000000;
+                color: #fff;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    background-color: #e1c4a9;
+                }
+            }
+
+            & p {
+                margin-left: 25px;
+                display: inline-block;
+                width: 578px;
+                height: 53px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 23px;
+                color: #242424;
+
+                @media(max-width:992px) {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    &__empty {
+        font-family: "FuturaBookC";
+        font-size: 19px;
+        padding: 20px 0;
+        text-align: center;
+    }
+}

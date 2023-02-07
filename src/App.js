@@ -30,6 +30,8 @@ import Toggle from './Components/toggle'
 
 //IMPORT CONTEXT
 import { ThemeContext, themes } from './utils/ThemeContext';
+import Brand from './pages/Brand/Brand';
+import Favorite from './pages/Favorite/Favorite';
 
 function App() {
   return (
@@ -98,6 +100,14 @@ function App() {
           <Route
             path='Catalog'
             element={<Catalog />}
+          />
+          <Route 
+            path='Brand'
+            element={<Brand />}
+          />
+          <Route 
+            path='Favorite'
+            element={<Favorite />}
           />
         </Route>
         <Route
