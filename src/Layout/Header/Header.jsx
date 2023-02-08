@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Basket from './../../pages/basket/basket';
 import { CustomContext } from '../../utils/context';
 import { BsPeople } from 'react-icons/bs'
+import ThemeBtn from '../../Components/ThemeBtn';
 
 const Header = () => {
 
@@ -17,6 +18,7 @@ const Header = () => {
         <nav className='header__nav'>
           <li>
             <ul className='header__nav-icon'>
+              <ThemeBtn />
               <li className='header__nav-icon_burger'>
                 <div className='header__burger'>
                   <span className='header__burger-line'></span>

@@ -2,6 +2,7 @@ import ReactPlayer from 'react-player'
 import { useState } from 'react'
 import eleanBg from '../../assets/Pages/Primerka/eleanbg.png'
 import PrimerkaIcon from '../../assets/Primerka/Primerka.svg'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const Primerka = () => {
     const [name, setName] = useState('')
@@ -18,6 +19,7 @@ const Primerka = () => {
     return (
         <>
             <div className='container'>
+                <FloatingWhatsApp />
                 <div className='primer'>
                     <div className='top'>
                         <h2 className='fitting'>ПРИМЕРКА</h2>

@@ -19,6 +19,7 @@
     "react-bootstrap": "^2.7.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
+    "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
     "react-player": "^2.11.0",
@@ -37,7 +38,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "server" : "json-server -w db.json --port 3001" ,
+    "server": "json-server -w db.json --port 3001",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -26,28 +26,15 @@ import './sass/style.scss'
 import SignUp from './pages/Sign-Up/SignUp';
 import SignIn from './pages/Sign-In/SignIn';
 import UserPage from './pages/UserPage/UserPage';
-import Toggle from './Components/toggle'
 
 //IMPORT CONTEXT
-import { ThemeContext, themes } from './utils/ThemeContext';
 import Brand from './pages/Brand/Brand';
 import Favorite from './pages/Favorite/Favorite';
+import Decor from './pages/Decor/Decor';
 
 function App() {
   return (
     <>
-      <ThemeContext>
-        {({ theme, setTheme }) => (
-          <Toggle
-            onChange={() => {
-              if (theme === themes.light) setTheme(themes.dark)
-              if (theme === themes.dark) setTheme(themes.light)
-            }}
-            value={theme === themes.dark}
-          />
-        )}
-      </ThemeContext>
-
       <Routes>
         <Route
           path=''
@@ -101,13 +88,17 @@ function App() {
             path='Catalog'
             element={<Catalog />}
           />
-          <Route 
+          <Route
             path='Brand'
             element={<Brand />}
           />
-          <Route 
+          <Route
             path='Favorite'
             element={<Favorite />}
+          />
+          <Route
+            path='Decor'
+            element={<Decor />}
           />
         </Route>
         <Route

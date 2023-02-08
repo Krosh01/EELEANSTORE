@@ -10,7 +10,7 @@ const getTheme = () => {
 
     return themes.dark
 }
-
+  
 const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = React.useState(getTheme)
 
