@@ -95,7 +95,7 @@ const Header = () => {
           <li><Link to="Catalog" className='header__nav-bottom_link' href="#">НОВИНИКИ</Link></li>
           <li><Link className='header__nav-bottom_link' to="/Catalog">КАТЕГОРИИ</Link> </li>
           <li><a className='header__nav-bottom_link' href="#">НАШИ КОЛЛЕКЦИИ</a> </li>
-          <li><a className='header__nav-bottom_link' href="#">ПОКУПАТЕЛЯМ</a> </li>
+          <li><Link to="Review" className='header__nav-bottom_link' href="#">ОТЗЫВЫ</Link> </li>
           <li><Link to="Brand" className='header__nav-bottom_link' href="#">О БРЕНДЕ</Link></li>
           <li><Link to='showRoom' className='header__nav-bottom_link' href="#">ШОУРУМ</Link></li>
           <li><Link to='Contact' className='header__nav-bottom_link' href="#">КОНТАКТЫ</Link></li>

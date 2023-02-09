@@ -12,10 +12,12 @@
 
 :root[data-theme="light"] {
     --background-color: #fafafa;
+    text-emphasis-color: #ffffff;
 }
 
 :root[data-theme="dark"] {
     --background-color: #2d3741;
+    text-emphasis-color: #ffffff;
 }
 
 html {
@@ -108,3 +110,4 @@ html {
 @import '../pages/Brand/Brand.scss';
 @import '../pages/Favorite/Favorite.scss';
 @import '../pages/Favorite/FavoriteItem/FavoriteItem.scss';
+@import './Review.scss';

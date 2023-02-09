@@ -1,0 +1,52 @@
+.Otzif {
+    background-color: #FAFAFA;
+}
+
+.Otzif_inner h1 {
+    text-align: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.Otzif_row {
+    display: flex;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.video {
+    max-width: 324px;
+    max-height: 401px;
+}
+
+.container {
+    gap: 8px;
+}
+
+@media (max-width: 425px) {
+    .Otzif_row {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .Star_row {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .Otziv_inner {
+        display: block;
+    }
+}
+
+@media (max-width: 425px) {
+    .video_item {
+        margin: 0;
+        padding: 0;
+    }
+}

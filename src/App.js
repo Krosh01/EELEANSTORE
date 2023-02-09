@@ -14,6 +14,7 @@ import Obmen from './pages/deliver/obmen';
 import Voz from './pages/deliver/voz';
 import Pay from './pages/deliver/pay';
 import Modal24 from './pages/modal/modal24';
+import Review from './pages/Review/Review';
 
 //IMPORT CATALOG
 
@@ -99,6 +100,10 @@ function App() {
           <Route
             path='Decor'
             element={<Decor />}
+          />
+          <Route
+            path='Review'
+            element={<Review />}
           />
         </Route>
         <Route
