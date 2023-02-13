@@ -28,7 +28,13 @@
 :root[data-theme="dark"] {
     --background-color: #2d3741;
     text-emphasis-color: #ffffff;
+    filter: invert(100%);
+    img:not([data-theme="dark"]), video {
+    filter: invert(100%);
+    }
 }
+
+
 
 html {
     background: var(--background-color);

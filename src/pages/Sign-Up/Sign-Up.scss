@@ -24,13 +24,14 @@
         height: 460px;
         background-color: white;
         text-align: center;
+        border-radius: 40px;
 
         @include mobile {
             width: 450px !important;
         }
 
         h1 {
-            font-family: "Raleway";
+            font-family: 'FuturaBookC';
             font-style: normal;
             font-weight: 300;
             font-size: 20px;
@@ -51,13 +52,13 @@
                 width: 400px;
                 height: 50px;
                 border: 0.5px solid #252525;
-
+                padding: 0 0 0 7px;
                 @include mobile {
                     width: 250px !important;
                 }
 
                 &::placeholder {
-                    font-family: "Raleway";
+                    font-family: 'FuturaBookC';
                     font-style: normal;
                     font-weight: 200;
                     font-size: 16px;
@@ -71,8 +72,7 @@
                 height: 50px;
                 background: #e0bea2;
                 border: none;
-
-                font-family: "Raleway";
+                font-family: 'FuturaBookC';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
@@ -80,14 +80,18 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: #ffffff;
-
+                transition: all 0.4s;
+                &:hover {
+                    background-color: #000;
+                    color: #ffffff;
+                }
                 @include mobile {
                     width: 250px !important;
                 }
             }
 
             span {
-                font-family: "Raleway";
+                font-family: 'FuturaBookC';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 18px;
@@ -102,16 +106,19 @@
             margin-top: 0px;
 
             a {
-                font-family: "Raleway";
+                font-family: 'FuturaBookC';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 19px;
-                text-decoration-line: underline;
                 color: #252525;
                 margin-left: 96px;
                 margin-right: 93px;
-
+                text-decoration: none;
+                transition: all 1.4s ease;
+                &:hover {
+                    text-decoration: underline;
+                }
                 @include little {
                     display: block;
                 }
