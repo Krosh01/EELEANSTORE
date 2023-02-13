@@ -29,8 +29,11 @@
     --background-color: #2d3741;
     text-emphasis-color: #ffffff;
     filter: invert(100%);
-    img:not([data-theme="dark"]), video {
+    img:not([data-theme="dark"]), video, .brand-img {
     filter: invert(100%);
+    }
+    &:not([data-theme="dark"]), .Obrende_left {
+        filter:contrast(0.3);
     }
 }
 
@@ -50,6 +53,7 @@ html {
     width: 12px;
     height: 8px;
     background-color: #000000;
+    filter: brightness(1);
 }
 
 ::-webkit-scrollbar-thumb {
