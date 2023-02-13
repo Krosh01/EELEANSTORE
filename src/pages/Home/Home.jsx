@@ -7,12 +7,15 @@ import Shouroom from './Shouroom/Shouroom';
 import Star from './Star/Star'
 import Otziv from './Otziv/Otziv'
 import Instagram from './Instagram/Instagram';
-import { Navigate } from 'react-router-dom';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import FabFloat from '../../Components/FabFloat';
 
 const Home = () => {
 
     return (
         <main>
+            <FabFloat />
+            <FloatingWhatsApp />
             <Begin />
             <Collection />
             <Obrende />

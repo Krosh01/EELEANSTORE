@@ -3,6 +3,7 @@ import CategoryTitle from '../../Components/CategoryTitle'
 import { CustomContext } from '../../utils/context'
 import CatalogRow from './CatalogRow/CatalogRow'
 import SideBar from './SideBar/SideBar'
+import {FloatingWhatsApp} from 'react-floating-whatsapp';
 
 const Catalog = () => {
     const { category, getProducts } = useContext(CustomContext)
@@ -13,6 +14,7 @@ const Catalog = () => {
     return (
         <selection>
             <div className="container">
+                <FloatingWhatsApp />
                 <CategoryTitle />
                 <p className='catalog-line'>
 
@@ -31,3 +33,4 @@ const Catalog = () => {
 }
 
 export default Catalog
+

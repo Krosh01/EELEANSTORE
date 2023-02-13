@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Basket from './../../pages/basket/basket';
 import { CustomContext } from '../../utils/context';
 import { BsPeople } from 'react-icons/bs'
+import ThemeBtn from '../../Components/ThemeBtn';
 
 const Header = () => {
 
@@ -17,6 +18,7 @@ const Header = () => {
         <nav className='header__nav'>
           <li>
             <ul className='header__nav-icon'>
+              <ThemeBtn />
               <li className='header__nav-icon_burger'>
                 <div className='header__burger'>
                   <span className='header__burger-line'></span>
@@ -93,7 +95,7 @@ const Header = () => {
           <li><Link to="Catalog" className='header__nav-bottom_link' href="#">НОВИНИКИ</Link></li>
           <li><Link className='header__nav-bottom_link' to="/Catalog">КАТЕГОРИИ</Link> </li>
           <li><a className='header__nav-bottom_link' href="#">НАШИ КОЛЛЕКЦИИ</a> </li>
-          <li><a className='header__nav-bottom_link' href="#">ПОКУПАТЕЛЯМ</a> </li>
+          <li><Link to="Review" className='header__nav-bottom_link' href="#">ОТЗЫВЫ</Link> </li>
           <li><Link to="Brand" className='header__nav-bottom_link' href="#">О БРЕНДЕ</Link></li>
           <li><Link to='showRoom' className='header__nav-bottom_link' href="#">ШОУРУМ</Link></li>
           <li><Link to='Contact' className='header__nav-bottom_link' href="#">КОНТАКТЫ</Link></li>

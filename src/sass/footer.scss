@@ -1,58 +1,71 @@
-.Footer{
-  background-color: #FAFAFA;
+.Footer {
+  background-color: #b1e0c1;
 }
-.Footer_inner{
+
+.Footer_inner {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 170px;
   margin-top: 60px;
 }
-.Footer_start p{
+
+.Footer_start p {
   font-size: 15px;
   font-weight: 500;
-} 
-.FooterAppContact p{
+}
+
+.FooterAppContact p {
   width: 240px;
 }
-.Footer_icon{
+
+.Footer_icon {
   margin-top: -10px;
 }
-.FooterAppContact{
-  margin-top:40px ;
+
+.FooterAppContact {
+  margin-top: 40px;
 }
-.FooterEmail{
+
+.FooterEmail {
   margin-top: 70px;
 }
+
 .Footer_nav ul {
   display: flex;
   justify-content: center;
   gap: 17px;
 }
-.Footer_nav ul li{
+
+.Footer_nav ul li {
   list-style: none;
   font-size: 14px;
   font-weight: 500;
 }
-.Footer_nav ul li a:hover{
+
+.Footer_nav ul li a:hover {
   color: #D7B494;
   transition: 0.3s;
   cursor: pointer;
 }
-.Footer_Information{
+
+.Footer_Information {
   display: flex;
   margin-top: 54px;
   font-size: 15px;
   font-weight: 500;
   justify-content: space-between;
 }
-.FooterApps{
+
+.FooterApps {
   margin-top: 42px;
 }
-.FOoter_icon_apps{
+
+.FOoter_icon_apps {
   padding-left: 25px;
 }
-.Footer_input{
+
+.Footer_input {
   height: 34px;
   width: 302px;
   border: 1px solid #D7B494;
@@ -60,7 +73,8 @@
   color: black;
   margin-top: -40px;
 }
-.Footer_input2{
+
+.Footer_input2 {
   height: 34px;
   width: 302px;
   border: 1px solid #D7B494;
@@ -68,25 +82,30 @@
   color: black;
   margin-top: 10px;
 }
-.Footer_Agreement{
+
+.Footer_Agreement {
   display: flex;
   margin-top: 10px;
 }
-.Footer_Agreement p{
+
+.Footer_Agreement p {
   font-size: 13px;
   font-weight: 500;
   margin-left: 10px;
 }
-.Footer_Agreement a{
+
+.Footer_Agreement a {
   font-size: 13px;
   font-weight: 500;
   color: #D7B494;
   margin-left: 5px;
 }
-.Footer_End{
+
+.Footer_End {
   margin-top: -20px;
 }
-.Footer_Subscribe_button{
+
+.Footer_Subscribe_button {
   display: flex;
   height: 34px;
   width: 302px;
@@ -98,28 +117,34 @@
   border: 1px solid #D7B494;
   margin-top: 10px;
 }
-.Footer_checkbox{
+
+.Footer_checkbox {
   border: 1px dotted #D7B494;
   background-color: #D7B494;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
-@media(max-width:425px){
-  .Footer_inner{
+@media(max-width:425px) {
+  .Footer_inner {
     display: block;
   }
-  .Footer_icon{
+
+  .Footer_icon {
     margin-top: -50px;
   }
-  .FooterAppContact:nth-child(2n){
-    margin-top:10px;
+
+  .FooterAppContact:nth-child(2n) {
+    margin-top: 10px;
   }
-  .FooterAppContact p{
-    margin-top:20px
+
+  .FooterAppContact p {
+    margin-top: 20px
   }
-  .FooterEmail{
+
+  .FooterEmail {
     margin-top: 20px;
   }
+
   .Footer_nav ul {
     display: block;
     flex-wrap: wrap;
@@ -127,40 +152,51 @@
     margin-top: 20px;
     gap: 25px;
   }
+
   .Footer_nav ul li {
     font-size: 20px;
     font-weight: 500px;
     margin-top: 10px;
   }
+
   .Footer_nav ul:hover {
     color: #D7B494;
   }
+
   .Footer_nav ul li:nth-child(4) {
     margin-left: 215px;
     margin-top: -90px;
   }
+
   .Footer_nav ul li:nth-child(5) {
     margin-left: 215px;
   }
+
   .Footer_nav ul li:nth-child(6) {
     margin-left: 215px;
   }
-  .Footer_Information{
+
+  .Footer_Information {
     display: flex;
     margin-top: 20px;
     font-size: 15px;
     font-weight: 500;
     justify-content: center;
   }
-  .FooterAdress{
+
+  .FooterAdress {
     display: block;
   }
-  .Footer_input{
+
+  .Footer_input {
     width: 334px;
   }
-  .Footer_input2{
+
+  .Footer_input2 {
     width: 334px;
-  }.Footer_Subscribe_button{
+  }
+
+  .Footer_Subscribe_button {
     width: 334px;
   }
 }

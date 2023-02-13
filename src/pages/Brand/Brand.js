@@ -3,11 +3,13 @@ import { aboutData } from '../../Data/Data'
 import Icon from '../../assets/About/6.svg'
 import Image1 from '../../assets/About/1-img.png'
 import Image2 from '../../assets/About/2-img.png'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const Brand = () => {
     return (
         <section className='about'>
             <div className='container'>
+                <FloatingWhatsApp />
                 <div className='brand'>
                     <h1 className='brand-title'>О БРЕНДЕ</h1>
                     <div className='brand-img'></div>

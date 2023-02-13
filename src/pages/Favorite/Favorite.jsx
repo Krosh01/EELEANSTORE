@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import store from "../../redux";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import FavoriteItem from "./FavoriteItem/FavoriteItem";
 
 const Favorite = () => {
@@ -10,6 +11,7 @@ const Favorite = () => {
     return (
         <div className="favorites">
             <div className="container">
+                <FloatingWhatsApp />
                 <h2 className="favorites__title">Избранное</h2>
                 <div className="favorites__content">
                     <form action="#">

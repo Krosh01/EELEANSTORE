@@ -4,6 +4,7 @@ import { BsTelephonePlus, BsWhatsapp, BsFileDiff, BsClockHistory, BsCompass } fr
 import { AiOutlineMessage } from 'react-icons/ai'
 import { RiErrorWarningLine } from 'react-icons/ri'
 import ContactQuestion from '../../Components/ContactsQuestion/ContactQuestion'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const Contact = () => {
     const hStyle = {
@@ -25,10 +26,11 @@ const Contact = () => {
     }
     const iconStyles = {
         fill: "#C0A78F",
-        fontSize : "24px"
+        fontSize: "24px"
     }
     return (
         <div className='container'>
+            <FloatingWhatsApp />
             <h1 style={hStyle}>Контакты</h1>
             <div className="innerSite">
                 <div className='innerLeft'>
@@ -68,13 +70,13 @@ const Contact = () => {
                             <h1 className='h1StyleContact'>АДРЕС И РЕЖИМ РАБОТЫ</h1>
                             <div className='DownContent'>
                                 <div className="DownClock">
-                                    <BsClockHistory style={iconStyles}/>
+                                    <BsClockHistory style={iconStyles} />
                                     <p style={pStyle} className="ClockContent">
                                         с 9.00 до 21.00 шоурум: с 12.00 до 21.00
                                     </p>
                                 </div>
                                 <div className="DownClock">
-                                    <BsCompass style={iconStyles}/>
+                                    <BsCompass style={iconStyles} />
                                     <p style={pStyle} className="CompasContent">
                                         АДРЕС: г. Москва, Новая площадь 8, стр.2, 5 этаж
                                     </p>

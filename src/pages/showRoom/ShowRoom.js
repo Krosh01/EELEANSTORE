@@ -1,11 +1,12 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import Question from '../../Components/Question'
 
 const showRoom = () => {
     return (
         <div className='Showroom'>
             <div className="container">
+                <FloatingWhatsApp />
                 <h2 class="showroom-title title">
                     <span>
                         НАШ ШОУРУМ
