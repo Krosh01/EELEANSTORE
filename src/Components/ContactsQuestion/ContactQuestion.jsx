@@ -30,10 +30,9 @@ const ContactQuestion = () => {
                 <form action="data">
                     <input style={{ width: "600px", height: "60px", padding: "20px" }} type="date" placeholder='Выберите удобное для вас время ' />
                 </form>
-                <form action="comment" style={{ marginTop : "30px" }}>
-                    <input type="text" style={{ width: "400px", height: "130px" , padding : "26px" }} placeholder='Добавьте комментарий' />
+                <form action="comment" style={{ marginTop : "30px",display: "flex" }}>
+                    <textarea type="text" style={{ height: "100px", resize:"none",textTransform:"uppercase" , padding: "17.5px", display: "block", flexGrow: "1"}} placeholder='Добавьте комментарий' />
                     <button style={{
-                        transform : "translateY(-35px)" ,
                         width: "182px",
                         height: "60px"
                     }} type='confirm' className='commentConfirmButton'>ЗАПИСАТЬСЯ</button>

@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="container">
           <div className="Footer_inner">
             <div className="Footer_start">
-              <div className='Footer_icon'><img src={logo} alt="" /></div>
+              <div className='Footer_icon'><img className='Footer_icon-icon' src={logo} alt="" /></div>
               <div className="FooterAppContact">
                 <p>ТЕЛ.: 8 (495) 150-14-77</p>
                 <p>WHATSAPP: +7 (977) 728-27-38</p>
