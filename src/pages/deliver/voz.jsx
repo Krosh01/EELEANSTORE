@@ -10,7 +10,7 @@ const Voz = () => {
             <h2 className='deliver__title'>Возврат</h2>
             <ul className='deliver__ul'>
                 <li className='deliver__ul-il'><Link to='/Obmen' className='deliver__ul-li'>ОБМЕН</Link></li>
-                <li className='deliver__ul-il'><Link to='/' className='deliver__ul-li'>ДОСТАВКА</Link></li>
+                <li className='deliver__ul-il'><Link to='/Deliver' className='deliver__ul-li'>ДОСТАВКА</Link></li>
                 <li className='deliver__ul-il'><Link to='/Pay' className='deliver__ul-li'>ОПЛАТА</Link></li>
             </ul>
             <div className='deliver__page'>

@@ -9,7 +9,7 @@ const Obmen = () => {
         <div className='container'>
             <h2 className='deliver__title'>Обмен</h2>
             <ul className='deliver__ul'>
-                <li className='deliver__ul-il'><Link to='/' className='deliver__ul-li'>ДОСТАВКА</Link></li>
+                <li className='deliver__ul-il'><Link to='/Deliver' className='deliver__ul-li'>ДОСТАВКА</Link></li>
                 <li className='deliver__ul-il'><Link to='/Voz' className='deliver__ul-li'>ВОЗВРАТ</Link></li>
                 <li className='deliver__ul-il'><Link to='/Pay' className='deliver__ul-li'>ОПЛАТА</Link></li>
             </ul>

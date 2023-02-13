@@ -11,7 +11,7 @@ const Pay = () => {
             <ul className='deliver__ul'>
                 <li className='deliver__ul-il'><Link to='/Obmen' className='deliver__ul-li'>ОБМЕН</Link></li>
                 <li className='deliver__ul-il'><Link  to='/Voz' className='deliver__ul-li'>ВОЗВРАТ</Link></li>
-                <li className='deliver__ul-il'><Link to='/' className='deliver__ul-li'>ДОСТАВКА</Link></li>
+                <li className='deliver__ul-il'><Link to='/Deliver' className='deliver__ul-li'>ДОСТАВКА</Link></li>
             </ul>
             <div className='deliver__page'>
               <img className='deliver__page-img' src={imgDeliver} alt="imgDeliver"/>
