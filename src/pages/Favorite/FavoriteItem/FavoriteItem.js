@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteChosen, deleteTask } from "../../../redux/reducers/dataCrad";
+import { deleteChosen } from "../../../redux/reducers/dataCrad";
 
 const FavoriteItem = ({ item }) => {
 
@@ -26,7 +26,7 @@ const FavoriteItem = ({ item }) => {
                     placeholder="ДОБАВИТЬ КОММЕНТАРИЙ"
                 ></textarea>
                 <div className="favoriteItem__second-links">
-                    <a className="favoriteItem__second-links_btn" href="">
+                    <a className="favoriteItem__second-links_btn">
                         Купить
                     </a>
                     <a

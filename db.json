@@ -470,7 +470,7 @@
         },
         {
             "id": 49,
-            "img": "https://iroparis.ru/upload/resize_cache/iblock/3ce/a6w4w083to2f298zlrx7c38497cxi94f/1200_1200_1/ad50464d-0cbd-11ed-a2dc-da4fc8e91874_8e8b4d6b-a398-11ed-b80b-ac1f6be2f5cb.jpg",
+            "img": "https://eleanboutique.ru/wishlist/",
             "title": "/ Мини-юбка с оборками",
             "image": "https://eleanboutique.ru/catalog/view/theme/default/assets/img/header-icon-1.svg",
             "price": 35900,
@@ -969,7 +969,25 @@
             "title": "/ Платье-комбинация",
             "image": "https://eleanboutique.ru/catalog/view/theme/default/assets/img/header-icon-1.svg",
             "price": 35000,
-            "category": "Pre-order",
+            "category": "novelties",
+            "text": "Подчеркнет линию талии"
+        },
+        {
+            "id": 95,
+            "img": "https://eleanboutique.ru/image/cache/catalog/novinki2022/888a2bc2-015b-4852-b1b4-cb05de132024-590x965.jpeg",
+            "title": "/ Платье-комбинация",
+            "image": "https://eleanboutique.ru/catalog/view/theme/default/assets/img/header-icon-1.svg",
+            "price": 35000,
+            "category": "novelties",
+            "text": "Подчеркнет линию талии"
+        },
+        {
+            "id": 95,
+            "img": "https://eleanboutique.ru/image/cache/catalog/novinki2022/888a2bc2-015b-4852-b1b4-cb05de132024-590x965.jpeg",
+            "title": "/ Платье-комбинация",
+            "image": "https://eleanboutique.ru/catalog/view/theme/default/assets/img/header-icon-1.svg",
+            "price": 35000,
+            "category": "novelties",
             "text": "Подчеркнет линию талии"
         }
     ]

@@ -5,7 +5,6 @@ const SideBaritem = ({ text, value }) => {
     const { category, changeCategory } = useContext(CustomContext)
     return (
         <li onClick={() => changeCategory(value)} className={`sideBar_menu-item ${category === text ? 'active' : ''}`}><a>{text}</a></li>
-
     )
 }
 
