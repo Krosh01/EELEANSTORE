@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { deleteTask } from "../../../redux/reducers/dataCrad";
+import { deleteChosen, deleteTask } from "../../../redux/reducers/dataCrad";
 
 const FavoriteItem = ({ item }) => {
 
@@ -32,7 +32,7 @@ const FavoriteItem = ({ item }) => {
                     <a
                         className="favoriteItem__second-links_btn2"
                         onClick={() => {
-                            dispath(deleteTask(item.id));
+                            dispath(deleteChosen(item.id));
                         }}
                     >
                         Удалить

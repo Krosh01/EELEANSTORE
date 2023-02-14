@@ -36,6 +36,44 @@ const coin = {
             count: 1,
             image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg'
         }
+    ],
+    chosen: [
+        {
+            id: 1,
+            title: 'Брюки клёш',
+            size: 49,
+            price: 20900,
+            underPrice: 20900,
+            count: 1,
+            image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg'
+        },
+        {
+            id: 2,
+            title: 'Брюки клёш',
+            size: 50,
+            price: 20100,
+            underPrice: 20100,
+            count: 1,
+            image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg'
+        },
+        {
+            id: 3,
+            title: 'Брюки клёш',
+            size: 27,
+            price: 20123,
+            underPrice: 20123,
+            count: 1,
+            image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg'
+        },
+        {
+            id: 4,
+            title: 'Брюки клёш',
+            size: 37,
+            price: 20223,
+            underPrice: 20223,
+            count: 1,
+            image: 'https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg'
+        }
     ]
 }
 
@@ -77,6 +115,14 @@ export default (state = coin, action) => {
                 }),
             }
         }
+        case "REMOVE": {
+            return {
+                ...state,
+                chosen: state.chosen.filter(item => {
+                    return item.id !== action.id
+                })
+            }
+        }
         default: return state
     }
 }
@@ -96,5 +142,11 @@ export const addPrice = (id) => {
 export const deletePrice = (id) => {
     return (dispath) => {
         return dispath({ type: 'MINUS_PRICE', id })
+    }
+}
+
+export const deleteChosen = (id) => {
+    return (dispath) => {
+        return dispath({ type: 'REMOVE', id })
     }
 }

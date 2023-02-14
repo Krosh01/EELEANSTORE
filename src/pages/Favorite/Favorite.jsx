@@ -6,7 +6,7 @@ import FavoriteItem from "./FavoriteItem/FavoriteItem";
 
 const Favorite = () => {
 
-    const task = useSelector((store) => store.task.task);
+    const chosen = useSelector((store) => store.chosen.chosen)
 
     return (
         <div className="favorites">
@@ -15,14 +15,14 @@ const Favorite = () => {
                 <h2 className="favorites__title">Избранное</h2>
                 <div className="favorites__content">
                     <form action="#">
-                        {task.length !== 0 ? (
-                            task.map((item) => <FavoriteItem item={item} />)
+                        {chosen.length !== 0 ? (
+                            chosen.map((item) => <FavoriteItem item={item} />)
                         ) : (
                             <div className="favorites__empty">Избранное пуста</div>
                         )}
                     </form>
                 </div>
-                {task.length !== 0 && (
+                {chosen.length !== 0 && (
                     <div className="favorites__action">
                         <h2 className="favorites__action-title">
                             ДЕЙСТВИЯ НАД ЛИСТОМ ПОЖЕЛАНИЙ{" "}

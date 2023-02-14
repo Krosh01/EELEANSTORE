@@ -27,6 +27,8 @@ const HeaderStatic = () => {
 
   const { basket, setBasket } = useContext(CustomContext)
   const totalCount = useSelector((store) => store.task.task.reduce((asc, item) => asc + item.count, 0))
+  const totalChosen = useSelector((store) => store.chosen.chosen.reduce((ascs, item) => ascs + item.count, 0))
+
 
   return (
     <header className={`headerS ${stickyclass}`}>
@@ -85,7 +87,7 @@ const HeaderStatic = () => {
                   <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.5769 4.24603C11.8813 3.62026 9.21613 1.37173 6.85609 1.39471C4.43734 1.41857 0.70379 3.00156 1.0187 7.69219C1.29714 11.8357 12.3919 20.3561 12.3919 20.3561C12.4613 20.4073 12.5334 20.4073 12.6081 20.3561C12.6081 20.3561 23.7029 11.8348 23.9813 7.69219C24.2962 3.00156 20.5627 1.41857 18.143 1.39471C15.4022 1.36819 12.2496 4.40512 12.2496 4.40512L10.1093 6.58736" stroke="#333333" stroke-miterlimit="3.8637" />
                   </svg>
-                  <p className='headerS__count'>0</p>
+                  <p className='headerS__count'>{totalChosen}</p>
                 </Link>
               </li>
               <li>

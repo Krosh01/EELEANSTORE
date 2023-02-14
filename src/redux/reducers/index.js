@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
 import task from './dataCrad'
+import chosen from './dataCrad'
 
 const rootReducers = (coin) => combineReducers({
-    task
+    task, chosen
 })
 
 export default rootReducers;
