@@ -14,7 +14,11 @@
     &__first {
         display: flex;
         align-items: center;
-
+        & a {
+            & img {
+                width: 100px;
+            }
+        }
         @media(max-width:987px) {
             width: 100%;
         }
@@ -33,7 +37,6 @@
                 display: inline-block;
                 margin-bottom: 12px;
                 outline: none;
-
             }
         }
     }

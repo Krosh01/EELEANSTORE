@@ -7,15 +7,19 @@ export const CustomContext = createContext()
 const Context = (props) => {
     const [category, setCategory] = useState('')
     const [products, setProducts] = useState({ data: [], error: '' })
+    const [favarion, setFavarion] = useState({ data: [], error: '' })
     const [basket, setBasket] = useState(false)
     const [activ, setActiv] = useState(false)
     const [price, setPrice] = useState(1)
     const [card, setCard] = useState()
+    const [favorite, setFavorite] = useState([]);
+
 
 
     const changeCategory = (value) => {
         setCategory(value)
     }
+
     const getProducts = () => {
         axios(`http://localhost:3001/catalog/?category=${category}`)
             .then(({ data }) => setProducts({ ...products, data: data }))
@@ -23,14 +27,18 @@ const Context = (props) => {
     }
 
     const value = {
+        favorite,
+        favarion,
         products,
         category,
         getProducts,
         setProducts,
+        setFavarion,
         changeCategory,
         setBasket,
         setActiv,
         setPrice,
+        setFavorite,
         activ,
         basket,
         price,

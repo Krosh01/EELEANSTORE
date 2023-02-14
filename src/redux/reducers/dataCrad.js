@@ -41,6 +41,7 @@ const coin = {
         "https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg",
     },
   ],
+  favorite: []
 };
 
 export default (state = coin, action) => {
@@ -81,14 +82,9 @@ export default (state = coin, action) => {
         }),
       };
     }
-    case "DELETE__FAVORITE": {
-      return {
-        ...state,
-        favorite: state.favorite.filter((item) => {
-          return item.id !== action.id;
-        }),
-      };
-    }
+    case "SET_FAVORITES":
+      return { ...state, favorite: [...state.favorite, action.payload] };
+
     default:
       return state;
   }
@@ -112,8 +108,9 @@ export const deletePrice = (id) => {
   };
 };
 
-export const deleteChosen = (id) => {
+export const setFavorites = (favorite, payload) => {
   return (dispath) => {
-    return dispath({ type: "DELETE__FAVORITE", id });
+    return dispath({ type: "SET_FAVORITES", favorite, payload });
   };
 };
+

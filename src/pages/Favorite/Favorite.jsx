@@ -1,12 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import store from "../../redux";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import FavoriteItem from "./FavoriteItem/FavoriteItem";
+import { useSelector } from "react-redux";
+import FavoriteItem from './FavoriteItem/FavoriteItem'
+
+
 
 const Favorite = () => {
-  const task = useSelector((store) => store.task.task);
-
+  const favorite = useSelector((store) => store.favorite.favorite)
   return (
     <div className="favorites">
       <div className="container">
@@ -14,14 +14,14 @@ const Favorite = () => {
         <h2 className="favorites__title">Избранное</h2>
         <div className="favorites__content">
           <form action="#">
-            {task.length !== 0 ? (
-              task.map((item) => <FavoriteItem item={item} />)
+            {favorite.length !== 0 ? (
+              favorite.map((product => <FavoriteItem product={product}  key={product.id}/>))
             ) : (
               <div className="favorites__empty">Избранное пустое</div>
             )}
           </form>
         </div>
-        {task.length !== 0 && (
+        {favorite.length !== 0 && (
           <div className="favorites__action">
             <h2 className="favorites__action-title">
               ДЕЙСТВИЯ НАД ЛИСТОМ ПОЖЕЛАНИЙ{" "}

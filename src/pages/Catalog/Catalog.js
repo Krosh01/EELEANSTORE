@@ -7,6 +7,8 @@ import {FloatingWhatsApp} from 'react-floating-whatsapp';
 
 const Catalog = () => {
     const { category, getProducts } = useContext(CustomContext)
+    const { products } = useContext(CustomContext)
+
 
     useEffect(() => {
         getProducts()
@@ -24,7 +26,7 @@ const Catalog = () => {
                         <SideBar />
                     </div>
                     <div className="catalog__right">
-                        <CatalogRow />
+                        <CatalogRow products={products}/>
                     </div>
                 </div>
             </div>
