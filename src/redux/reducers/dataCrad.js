@@ -41,7 +41,7 @@ const coin = {
         "https://eleanboutique.ru/image/cache/catalog/novinki2022/obtravki/elean018301-150x200.jpg",
     },
   ],
-  favorite: []
+  favorite: [],
 };
 
 export default (state = coin, action) => {
@@ -84,7 +84,6 @@ export default (state = coin, action) => {
     }
     case "SET_FAVORITES":
       return { ...state, favorite: [...state.favorite, action.payload] };
-
     default:
       return state;
   }
@@ -113,4 +112,3 @@ export const setFavorites = (favorite, payload) => {
     return dispath({ type: "SET_FAVORITES", favorite, payload });
   };
 };
-
