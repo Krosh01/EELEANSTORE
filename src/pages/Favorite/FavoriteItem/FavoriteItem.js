@@ -1,9 +1,7 @@
 import React from "react";
-import { useDispatch } from "react-redux";
 
 const FavoriteItem = ({ product }) => {
 
-  const dispatch = useDispatch()
   return (
     <div className="favoriteItem">
       <div className="favoriteItem__first">

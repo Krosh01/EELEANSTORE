@@ -1,6 +1,7 @@
 import React from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { useSelector } from "react-redux";
+import store from "../../redux";
 import FavoriteItem from './FavoriteItem/FavoriteItem'
 
 

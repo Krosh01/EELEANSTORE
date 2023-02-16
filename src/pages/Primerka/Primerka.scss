@@ -1,233 +1,277 @@
 .top {
-    position: absolute;
-    transform: translateX(700px);
+  position: absolute;
+  transform: translateX(700px);
+  z-index: 1;
 }
 
+.kama {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://eleanboutique.ru/catalog/view/theme/default/assets/img/bg-fitting.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    left: -203px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f2;
+    z-index: -2;
+  }
+}
+
+.primer {
+  position: relative;
+}
+
+.imgKama {
+  opacity: 0;
+  z-index: -3;
+}
 .fitting {
-    transform: translateX(-110px);
-    margin-top: 52px;
+  transform: translateX(-110px);
+  margin-top: 52px;
 }
 
 .moscow {
-    margin-top: 52px;
-    text-align: left;
+  margin-top: 52px;
+  text-align: left;
 }
 
 .russian {
-    margin-top: 52px;
-    text-align: left;
+  margin-top: 52px;
+  text-align: left;
 }
 
 .table {
-    &::after {
-        content: "";
-        display: inline-block;
-        font-size: 0;
-        height: 100%;
-        vertical-align: middle;
-        width: 0;
+  &::after {
+    content: "";
+    font-size: 0;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+  }
+
+  &__main {
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    transform: translateX(640px) translateY(-1570px);
+    padding: 20px 35px;
+    background-color: #fff;
+    text-align: left;
+
+    @media (max-width: 767px) {
+      padding: 64px 40px;
     }
 
-    &__main {
-        display: inline-block;
-        background-color: transparent;
+    @media (max-width: 400px) {
+      padding: 66px 20px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 40px 20px;
+    }
+
+    &-title {
+      font-family: "FuturaBookC";
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      font-weight: 400;
+      color: #171717;
+
+      @media (max-width: 992px) {
         text-align: center;
-        vertical-align: middle;
-        max-width: 100%;
-        position: relative;
+        font-size: 20px;
+        line-height: 23px;
+      }
     }
 
-    &__content {
-        position: absolute;
-        transform: translateX(640px) translateY(-1570px);
-        padding: 20px 35px;
-        background-color: #fff;
-        text-align: left;
+    &-blocks {
+      display: flex;
+      padding: 16px 0px;
+      align-items: center;
 
-        @media(max-width:767px) {
-            padding: 64px 40px
+      @media (max-width: 500px) {
+        column-gap: 0;
+        text-align: center;
+      }
+
+      & li {
+        width: 115px;
+        flex-grow: 1;
+        font-family: "FuturaBookC";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        color: #000000;
+
+        @media (max-width: 400px) {
+          font-size: 14px;
+          line-height: normal;
         }
 
-        @media(max-width:400px) {
-            padding: 66px 20px
+        & b {
+          font-family: "FuturaBookC";
+          display: inline-block;
+          font-weight: 600;
+          padding: 2px 4px;
+          color: #000;
+          line-height: 22px;
+
+          & span {
+            color: #c0a78f;
+            margin-left: 5px;
+          }
         }
-
-        @media(max-width:576px) {
-            padding: 40px 20px
-        }
-
-        &-title {
-            font-family: 'FuturaBookC';
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            font-weight: 400;
-            color: #171717;
-
-            @media(max-width:992px) {
-                text-align: center;
-                font-size: 20px;
-                line-height: 23px;
-            }
-        }
-
-        &-blocks {
-            display: flex;
-            padding: 16px 0px;
-            align-items: center;
-
-            @media(max-width: 500px) {
-                column-gap: 0;
-                text-align: center;
-            }
-
-            & li {
-                width: 115px;
-                flex-grow: 1;
-                font-family: 'FuturaBookC';
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 20px;
-                letter-spacing: 0.05em;
-                color: #000000;
-
-                @media(max-width:400px) {
-                    font-size: 14px;
-                    line-height: normal;
-                }
-
-                & b {
-                    font-family: 'FuturaBookC';
-                    display: inline-block;
-                    font-weight: 600;
-                    padding: 2px 4px;
-                    color: #000;
-                    line-height: 22px;
-
-                    & span {
-                        color: #C0A78F;
-                        margin-left: 5px;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 .reviews {
-    max-width: 186px;
-    max-height: 251px;
+  max-width: 186px;
+  max-height: 251px;
 }
 
 .reviews_row {
-    display: flex;
-    gap: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .h2 {
-    text-align: left;
-    font-size: 21px;
+  text-align: left;
+  font-size: 21px;
 }
 
 .reviews_block {
-    padding: 40px 40px 50px;
-    position: relative;
-    transform: translateY(-960px) translateX(640px);
-    width: 650px;
-    height: 392px;
-    background: #F9F9F9;
+  position: absolute;
+  padding: 40px 40px 50px;
+  transform: translateY(-960px) translateX(640px);
+  width: 650px;
+  height: 392px;
+  background: #f9f9f9;
 }
 
 .border {
-    border: 1px solid #CFD5E2;
-    margin: 10px 0;
+  border: 1px solid #cfd5e2;
+  margin: 10px 0;
 }
 
 .form_inner {
-    transform: translateY(-920px) translateX(640px);
-    border: 1px solid #CBC8C8;
-    background: #F9F9F9;
-    width: 650px;
-    height: 392px;
+  position: absolute;
+  transform: translateY(-507px) translateX(640px);
+  background: #f9f9f9;
+  width: 650px;
+  height: 392px;
 }
 
 .formIcon {
-    transform: translateX(290px) translateY(20px);
+  transform: translateX(290px) translateY(20px);
 }
 
 .form_inner h1 {
-    padding-left: 25px;
-    font-size: 21px;
-    font-weight: 400;
+  padding-left: 25px;
+  font-size: 21px;
+  font-weight: 400;
 }
 
 .form_input {
-    width: 300px;
-    height: 60px;
-    padding: 0 0 0 10px;
-    border: 1px solid black;
-    color: black;
-
+  width: 300px;
+  height: 60px;
+  padding: 0 0 0 10px;
+  border: 1px solid black;
+  color: black;
 }
 
 .form_input_row1 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .form_input_row2 {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .form_input_row3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.form_input_time {
-    height: 60px;
-    width: 600px;
-    border: 1px solid black;
-    padding-left: 10px;
-    background-color: #FAFAFA;
-    color: black;
-}
-
-.form_input_coment {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  & textarea {
+    display: block;
+    outline: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    padding: 17.5px;
+    border: 1px solid #000;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #000;
+    text-transform: uppercase;
+    resize: none;
+    width: 421px;
     height: 100px;
-    width: 420px;
-    border: 1px solid black;
-    padding: 0 0 50px 10px;
-    background-color: #FAFAFA;
-    color: black;
-}
-
-.form_button {
+    overflow: auto;
+  }
+  & button {
     cursor: pointer;
+    display: block;
+    width: 180px;
     min-width: 180px;
     height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-decoration: none;
     outline: none;
-    background: none;
     border: 1px solid #000000;
-    border-left: none;
-    font-family: 'FuturaBookC';
-    font-weight: 600;
-    line-height: 25px;
+    background: none;
+    transition: all 0.4s;
+    font-weight: 500;
     font-size: 13px;
+    line-height: 25px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in;
-
+    color: #000000;
+    border-left: none;
     &:hover {
         background-color: #000000;
         color: #fff;
     }
+  }
+}
+
+.form_input_time {
+  height: 60px;
+  width: 600px;
+  border: 1px solid black;
+  padding-left: 10px;
+  background-color: #fafafa;
+  color: black;
 }

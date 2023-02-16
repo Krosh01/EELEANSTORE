@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { setFavorites } from "../../../redux/reducers/dataCrad";
 
 const CatalogRow = ({ products }) => {
     const dispatch = useDispatch()
-
   return (
     <div className="catalog_row">
       {products.data.map((item) => (
