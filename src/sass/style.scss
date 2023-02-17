@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 @font-face {
-	font-family: 'FuturaBookC';
-	src: url('../fonts/futurabookc.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/futurabookc.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/futurabookc.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/futurabookc.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/futurabookc.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/futurabookc.svg#futurabookc') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-family: 'FuturaBookC';
+    src: url('../fonts/futurabookc.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/futurabookc.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/futurabookc.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/futurabookc.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/futurabookc.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/futurabookc.svg#futurabookc') format('svg');
+    /* Chrome < 4, Legacy iOS */
 }
 
 
@@ -26,18 +33,24 @@
 }
 
 :root[data-theme="dark"] {
-    --background-color: #2d3741;
-    text-emphasis-color: #ffffff;
+    --background-color: #fefeff;
+    text-emphasis-color: #201e1e;
     filter: invert(100%);
-    img:not([data-theme="dark"]), video, .brand-img, .YMaps, .video_item, .kama {
-    filter: invert(100%);
+
+    img:not([data-theme="dark"]),
+    video,
+    .brand-img,
+    .YMaps,
+    .video_item,
+    .kama {
+        filter: invert(100%);
     }
-    &:not([data-theme="dark"]), .Obrende_left {
-        filter:contrast(0.3);
+
+    &:not([data-theme="dark"]),
+    .Obrende_left {
+        filter: contrast(0.3);
     }
 }
-
-
 
 html {
     background: var(--background-color);
