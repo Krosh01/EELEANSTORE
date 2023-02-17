@@ -11,15 +11,17 @@ import ThemeProvider from './Providers/ThemeProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ThemeProvider>
-        <AuthContextProvider>
-            <BrowserRouter>
-                <Context>
-                    <Provider store={store}>
+    <React.StrictMode>
+        <ThemeProvider>
+            <AuthContextProvider>
+                <BrowserRouter>
+                    <Context>
+                        <Provider store={store}>
                             <App />
-                    </Provider>
-                </Context>
-            </BrowserRouter>
-        </AuthContextProvider>
-    </ThemeProvider>
+                        </Provider>
+                    </Context>
+                </BrowserRouter>
+            </AuthContextProvider>
+        </ThemeProvider>
+    </React.StrictMode>
 );
