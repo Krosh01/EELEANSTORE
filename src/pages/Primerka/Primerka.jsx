@@ -18,9 +18,9 @@ const Primerka = () => {
 
   return (
     <>
+    <FloatingWhatsApp />
       <div className="kama">
         <div className="container">
-          <FloatingWhatsApp />
           <div className="primer">
             <div className="top">
               <h2 className="fitting">ПРИМЕРКА</h2>

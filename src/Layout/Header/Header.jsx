@@ -94,8 +94,8 @@ const Header = () => {
           </li>
         </nav>
         <nav className='header__nav-bottom'>
-          <li><Link to="Catalog" className='header__nav-bottom_link' href="#">SALE</Link></li>
-          <li><Link to="Catalog" className='header__nav-bottom_link' href="#">НОВИНИКИ</Link></li>
+          <li><Link to="Catalog" className='header__nav-bottom_link'onClick={() => changeCategory('novelties')} href="#">SALE</Link></li>
+          <li><Link to="Catalog" className='header__nav-bottom_link' onClick={() => changeCategory('novelties')} href="#">НОВИНИКИ</Link></li>
           <li><Link className='header__nav-bottom_link' to="/Catalog" onClick={() => changeCategory('novelties')}>КАТЕГОРИИ</Link> </li>
           <li><a className='header__nav-bottom_link' href="#">НАШИ КОЛЛЕКЦИИ</a> </li>
           <li><Link to="Review" className='header__nav-bottom_link' href="#">ОТЗЫВЫ</Link> </li>
