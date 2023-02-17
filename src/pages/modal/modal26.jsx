@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
 import { Link } from 'react-router-dom'
+import { CustomContext } from '../../utils/context'
 
 const formSchema = Yup.object().shape({
     name: Yup.string()
@@ -19,6 +20,9 @@ const Modal26 = () => {
     const validationOpt = { resolver: yupResolver(formSchema) }
     const { register, handleSubmit, reset, formState } = useForm(validationOpt)
     const { errors } = formState
+    const { aidar,setAidar} = useContext(CustomContext)
+    const { aidar3, setAidar3} = useContext(CustomContext)
+
 
     function onFormSubmit(data) {
         console.log(JSON.stringify(data, null, 4))
@@ -28,7 +32,7 @@ const Modal26 = () => {
   return (
     <section className='md26'>
         <div className='md26__main'>
-            <div className='md26__close'>Закрыть</div>
+            <div className='md26__close' onClick={() => setAidar(!aidar)}>Закрыть</div>
             <div className='md26__content'>
                 <div className='md26__content-title'>ОФОРМИТЬ ПРЕДЗАКАЗ</div>
                 <div className='md26__content-subtitle'>ЕСЛИ ВАШЕГО РАЗМЕРА НЕТ В НАЛИЧИИ, ВЫ МОЖЕТЕ ОФОРМИТЬ ПРЕДЗАКАЗ.</div>
@@ -47,7 +51,7 @@ const Modal26 = () => {
                         </p>
                     </div>
                 </div>
-                <form className='md26__form' onSubmit={handleSubmit(onFormSubmit)}>
+                <form className='md26__form' onSubmit={handleSubmit(onFormSubmit)} >
                     <div className='md25__form-flex'>
                         <div className='md25__form-flex_error'>
                             <input
@@ -130,7 +134,7 @@ const Modal26 = () => {
                             <b></b>
                             <span>Я согласен с <Link to="/">политикой конфиденциальности</Link></span>
                         </label>
-                        <button type="submit" className={`${errors.checked?.message}`}>Оформить примерку</button>
+                        <button type="submit" onSubmit={() => setAidar3(!aidar3) && setAidar(!aidar)} className={`${errors.checked?.message}`}>Оформить примерку</button>
                     </div>
                 </form>
             </div>

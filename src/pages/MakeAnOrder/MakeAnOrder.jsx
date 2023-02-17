@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import elean from "../../assets/makeAnOrder/elean1_58886 2 (1).png"
 import lag from "../../assets/makeAnOrder/elean47408 3.png";
 import elen from "../../assets/makeAnOrder/elean1_58886 2 (1).png";
@@ -10,13 +10,27 @@ import slyde4 from "../../assets/makeAnOrder/slydes/4slyde.jpeg";
 import plus from "../../assets/makeAnOrder/slydes/plus.svg";
 import minus from "../../assets/makeAnOrder/slydes/minus.svg";
 import store from "../../redux";
+import { Link } from "react-router-dom";
+import Modal26 from "../modal/modal26";
+import { CustomContext } from "../../utils/context";
+import Modal28 from "../modal/modal28";
+import Modal27 from "../modal/modal27";
+import Modal25 from "../modal/modal25";
 
 const MakeAnOrder = ({products}) => {
   const [active, setActive] = useState(false);
   const [active2, setActive2] = useState(false);
+  const { aidar, setAidar} = useContext(CustomContext)
+  const { aidar2, setAidar2} = useContext(CustomContext)
+  const { aidar3, setAidar3} = useContext(CustomContext)
+  const { aidar4, setAidar4} = useContext(CustomContext)
 
   return (
     <>
+    {aidar && <Modal26/>}
+    {aidar2 && <Modal28/>}
+    {aidar3 && <Modal27 Product={products.title}/>}
+    {aidar4 && <Modal25/>}
     <div className="page">
       <div className="container">
         <div className="cardList">
@@ -103,37 +117,37 @@ const MakeAnOrder = ({products}) => {
                 </label>
               </div>
               <div className="cardList__rigth-size_buttons">
-                <a href="" className="cardList__rigth-size_buttons-btns">
+                <a className="cardList__rigth-size_buttons-btns">
                   <span className="cardList__rigth-size_buttons-btns_icon">
                     <img
                       src="https://eleanboutique.ru/catalog/view/theme/default/assets/img/size-icon-1.svg"
                       alt="icon"
                     />
                   </span>
-                  <span className="cardList__rigth-size_buttons-btns_text">
+                  <span className="cardList__rigth-size_buttons-btns_text" onClick={() => setAidar2(!aidar2)}>
                     ОПРЕДЕЛИТЕ СВОЙ РАЗМЕР
                   </span>
                 </a>
-                <a href="" className="cardList__rigth-size_buttons-btns">
+                <a className="cardList__rigth-size_buttons-btns">
                   <span className="cardList__rigth-size_buttons-btns_icon">
                     <img
                       src="https://eleanboutique.ru/catalog/view/theme/default/assets/img/size-icon-2.svg"
                       alt=""
                     />
                   </span>
-                  <span className="cardList__rigth-size_buttons-btns_text">
+                  <Link onClick={() => setAidar(!aidar)} className="cardList__rigth-size_buttons-btns_text">
                     Нет вашего размера?
-                  </span>
+                  </Link>
                 </a>
               </div>
             </div>
             <div className="cardList__rigth-buttons">
-              <a href="" className="cardList__rigth-buttons_big">
+              <a onClick={() => setAidar3(!aidar3)} className="cardList__rigth-buttons_big">
                 Добавить в корзину
               </a>
               <div className="cardList__rigth-buttons_flex">
-                <a href="">Примерка</a>
-                <a href="">Купить в рассрочку</a>
+                <a onClick={() => setAidar4(!aidar4)}>Примерка</a>
+                <a onClick={() => setAidar3(!aidar3)}>Купить в рассрочку</a>
               </div>
             </div>
             <div className="cardList__rigth-text">

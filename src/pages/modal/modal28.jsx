@@ -1,11 +1,16 @@
 import React from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { CustomContext } from '../../utils/context'
 
 const Modal28 = () => {
+
+    const { aidar2, setAidar2} = useContext(CustomContext)
+
   return (
     <section className='md28'>
         <div className='md28__main'>
-            <Link to='/'><div className='md28__close'>Закрыть</div></Link>
+            <div className='md28__close' onClick={() => setAidar2(!aidar2)}>Закрыть</div>
             <div className='md28__content'>
                 <h2 className='md28__content-title'>Таблица размеров</h2>
                 <ul className='md28__content-blocks'>

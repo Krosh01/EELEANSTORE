@@ -1,18 +1,23 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../../assets/modal/first.jpg'
 import img2 from '../../assets/modal/second.jpg'
 import img3 from '../../assets/modal/third.jpg'
+import { CustomContext } from '../../utils/context'
 
-const Modal27 = () => {
+const Modal27 = ({Product}) => {
+
+    const { aidar3,setAidar3} = useContext(CustomContext)
+
   return (
     <section className='md27'>
         <div className='container'>
             <div className='md27__over'>
                 <div className='md27__inner'>
-                    <div className='md27__close' title='Закрыть'>Закрыть</div>
+                    <div className='md27__close' title='Закрыть' onClick={() => setAidar3(!aidar3)}>Закрыть</div>
                     <div className='md27__main'>
                         <h2 className='md27__main-title'>
-                        ЖАКЕТ-СМОКИНГ С ЛАЦКАНМИ ДОБАВЛЕН В КОРЗИНУ ПОКУПОК!
+                        {Product}
                         </h2>
                         <p className='md27__main-recom'>
                         С этим изделием чаще всего покупают:
@@ -67,7 +72,7 @@ const Modal27 = () => {
                             </div>
                         </div>
                         <div className='md27__btn'>
-                            <Link to="/" className='md27__btn-first btn'>ПРОДОЛЖИТЬ ПОКУПКИ</Link>
+                            <Link onClick={() => setAidar3(!aidar3)} className='md27__btn-first btn'>ПРОДОЛЖИТЬ ПОКУПКИ</Link>
                             <Link to="/" className='md27__btn-second btn'>ПЕРЕЙТИ К ОФОРМЛЕНИЮ</Link>
                         </div>
                     </div>

@@ -6,6 +6,7 @@
     "@angular/fire": "^7.5.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@hookform/resolvers": "^2.9.11",
     "@mui/material": "^5.11.7",
     "@reduxjs/toolkit": "^1.9.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -21,6 +22,7 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",
+    "react-hook-form": "^7.43.1",
     "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
     "react-player": "^2.11.0",
@@ -37,7 +39,8 @@
     "scss": "^0.2.4",
     "start": "^5.1.0",
     "uuid": "^9.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.0"
   },
   "scripts": {
     "server": "json-server -w db.json --port 3001",

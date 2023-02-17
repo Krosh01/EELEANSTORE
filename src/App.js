@@ -35,6 +35,8 @@ import Decor from './pages/Decor/Decor';
 import ModalKama from './pages/modal/modalKama';
 import MakeAnOrder from './pages/MakeAnOrder/MakeAnOrder';
 import Makesense from './pages/MakeAnOrder/Makesense';
+import Modal26 from './pages/modal/modal26';
+import Modal28 from './pages/modal/modal28';
 
 function App() {
   return (
@@ -87,6 +89,10 @@ function App() {
           <Route
             path='size'
             element={<Modal24 />}
+          />
+          <Route
+            path='notHave'
+            element={<Modal26/>}
           />
           <Route
             path='Catalog'

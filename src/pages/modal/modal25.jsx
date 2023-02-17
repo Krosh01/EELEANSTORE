@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as Yup from 'yup'
 import { Link } from 'react-router-dom'
+import { CustomContext } from '../../utils/context'
 
 const formSchema = Yup.object().shape({
     name: Yup.string()
@@ -26,10 +27,12 @@ const Modal25 = () => {
         return false
     }
 
+    const {aidar4, setAidar4} = useContext(CustomContext)
+
   return (
     <section className='md25'>
         <div className='md25__main'>
-            <div className='md25__close'>Закрыть</div>
+            <div className='md25__close' onClick={() => setAidar4(!aidar4)}>Закрыть</div>
             <div className='md25__content'>
                 <div className='md25__title'>ХОТИТЕ ПРИМЕРИТЬ ДАННУЮ МОДЕЛЬ ПЕРЕД ПОКУПКОЙ? ЛЕГКО!</div>
                 <div className='md25__mid'>

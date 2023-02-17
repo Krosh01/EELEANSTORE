@@ -13,6 +13,10 @@ const Context = (props) => {
     const [price, setPrice] = useState(1)
     const [card, setCard] = useState()
     const [favorite, setFavorite] = useState([]);
+    const [aidar, setAidar] = useState(false)
+    const [aidar2, setAidar2] = useState(false)
+    const [aidar3, setAidar3] = useState(false)
+    const [aidar4, setAidar4] = useState(false)
 
 
 
@@ -27,10 +31,18 @@ const Context = (props) => {
     }
 
     const value = {
+        aidar,
+        aidar2,
+        aidar3,
+        aidar4,
         favorite,
         favarion,
         products,
         category,
+        setAidar,
+        setAidar2,
+        setAidar3,
+        setAidar4,
         getProducts,
         setProducts,
         setFavarion,
