@@ -6,10 +6,10 @@ const Makesense = () => {
   const makeOrder = useSelector((store) => store.makeOrder.makeOrder);
 
   if (makeOrder.length === 0) {
-    return null; // Don't render anything if makeOrder is empty
+    return null;
   }
 
-  const product = makeOrder[makeOrder.length - 1]; // Get the most recently added product
+  const product = makeOrder[makeOrder.length - 1];
 
   return <MakeAnOrder products={product} />;
 };
