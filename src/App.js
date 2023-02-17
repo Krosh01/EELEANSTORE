@@ -32,6 +32,7 @@ import UserPage from './pages/UserPage/UserPage';
 import Brand from './pages/Brand/Brand';
 import Favorite from './pages/Favorite/Favorite';
 import Decor from './pages/Decor/Decor';
+import ModalKama from './pages/modal/modalKama';
 
 function App() {
   return (
@@ -118,6 +119,9 @@ function App() {
           path='/userpage'
           element={<UserPage />}
         />
+        <Route
+          path='/complete'
+          element={<ModalKama/>}/>
       </Routes>
     </>
   );

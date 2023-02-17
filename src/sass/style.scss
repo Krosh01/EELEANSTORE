@@ -38,6 +38,7 @@
     filter: invert(100%);
 
     img:not([data-theme="dark"]),
+    .mdKama,
     video,
     .brand-img,
     .YMaps,
@@ -144,3 +145,4 @@ html {
 @import '../pages/Favorite/Favorite.scss';
 @import '../pages/Favorite/FavoriteItem/FavoriteItem.scss';
 @import './Review.scss';
+@import './mdKama.scss';
