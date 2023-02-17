@@ -39,6 +39,8 @@
 
     img:not([data-theme="dark"]),
     .mdKama,
+    .goots__twoblock,
+    .goots__third,
     video,
     .brand-img,
     .YMaps,
@@ -146,3 +148,4 @@ html {
 @import '../pages/Favorite/FavoriteItem/FavoriteItem.scss';
 @import './Review.scss';
 @import './mdKama.scss';
+@import './makeAnOrder.scss';

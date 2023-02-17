@@ -33,6 +33,7 @@ import Brand from './pages/Brand/Brand';
 import Favorite from './pages/Favorite/Favorite';
 import Decor from './pages/Decor/Decor';
 import ModalKama from './pages/modal/modalKama';
+import MakeAnOrder from './pages/MakeAnOrder/MakeAnOrder';
 
 function App() {
   return (
@@ -106,6 +107,14 @@ function App() {
             path='Review'
             element={<Review />}
           />
+          <Route
+          path='/MakeAnOrder'
+          element={<MakeAnOrder/>}
+        />
+        <Route
+          path='/complete'
+          element={<ModalKama/>}
+        />
         </Route>
         <Route
           path="/signup"
@@ -119,9 +128,6 @@ function App() {
           path='/userpage'
           element={<UserPage />}
         />
-        <Route
-          path='/complete'
-          element={<ModalKama/>}/>
       </Routes>
     </>
   );

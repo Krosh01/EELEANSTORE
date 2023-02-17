@@ -1,0 +1,558 @@
+.goots {
+    padding-top: 60px;
+    padding-left: 105px;
+    margin: 0;
+    &__h1 {
+      position: relative;
+      margin-bottom: 56px;
+      text-align: left;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 20px;
+      color: #000000;
+      padding-left: 12px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -500%;
+        bottom: -25px;
+        width: 1500%;
+        background-color: #e5e5e5;
+        height: 1px;
+      }
+    }
+    &__blok {
+      display: flex;
+    }
+    &__img {
+      width: 260px;
+      height: 373px;
+    }
+    &__tuxedo {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 20px;
+      height: 35px;
+      width: 223px;
+    }
+    &__heart {
+      text-align: right;
+      transform: translateY(-30px);
+    }
+    &__price {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+    }
+    &__text {
+      text-align: right;
+      font-size: 12px;
+      line-height: 21px;
+      font-weight: 600;
+      color: #afafaf;
+      transform: translateY(-20px);
+    }
+    &__line {
+      height: 2px;
+      background: #080808;
+    }
+    &__twoblock {
+      margin-top: 60px;
+      background: #252831 url("../assets/makeAnOrder/image1.png") left;
+      background-size: 669px 517px;
+      height: 517px;
+      background-repeat: no-repeat;
+      &-title {
+        padding-top: 55px;
+        padding-left: 275px;
+        text-align: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 400;
+        font-family: "FuturaBookC";
+      }
+      &-ol {
+        counter-reset: counter;
+        padding-top: 33px;
+        padding-left: 750px;
+        column-count: 2;
+        column-gap: 60px;
+        padding-right: 106px;
+        &_item {
+          display: table;
+          position: relative;
+          margin-bottom: 26px;
+          font-family: "FuturaBookC";
+          font-weight: 500;
+          color: #c0a78f;
+          font-size: 17px;
+          line-height: 1.46;
+          &::before {
+            display: table-cell;
+            border: 1px solid #c0a78f;
+            color: #c0a78f;
+            counter-increment: counter;
+            content: counter(counter);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            height: 22px;
+            left: -34px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            width: 22px;
+          }
+        }
+      }
+    }
+    &__third {
+      padding-left: 42px;
+      padding-top: 68px;
+      background: #252831 url("../assets/makeAnOrder/img2.png") right;
+      background-size: 642px 516px;
+      height: 516px;
+      background-repeat: no-repeat;
+      margin-bottom: 78px;
+      &-title {
+        color: #fff;
+        font-family: "FuturaBookC";
+        font-size: 21px;
+        letter-spacing: 0.05em;
+        line-height: 0.95;
+        margin-bottom: 17px;
+      }
+      &-text {
+        color: #c0a78f;
+        width: 570px;
+        height: 62px;
+        line-height: 22px;
+        font-size: 15;
+        font-family: Arial, Helvetica, sans-serif;
+        white-space: break-spaces;
+        margin-bottom: 41px;
+      }
+      &-ol {
+        padding: 0 59px 0;
+        display: block;
+        counter-reset: counter;
+        column-count: 2;
+        column-gap: 60px;
+        padding-right: 69px;
+        width: 670px;
+        height: 228px;
+        & li {
+          position: relative;
+          margin-bottom: 26px;
+          font-family: "FuturaBookC";
+          font-weight: 500;
+          color: #c0a78f;
+          font-size: 17px;
+          line-height: 22px;
+          &::before {
+            display: table-cell;
+            border: 3px solid #c0a78f;
+            color: #c0a78f;
+            counter-increment: counter;
+            content: counter(counter);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            height: 20px;
+            left: -36px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            line-height: 22px;
+            width: 20px;
+          }
+          & button {
+            padding: 11px 13px;
+            color: #fff;
+            background-color: #c0a78f;
+            display: block;
+            cursor: pointer;
+            border: none;
+            border: 1px solid transparent;
+            font-family: "FuturaBookC";
+            font-size: 15px;
+            line-height: 18px;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+            &:hover {
+              background-color: #000000;
+              color: #c0a78f;
+              border-color: #c0a78f;
+            }
+          }
+        }
+      }
+    }
+  }
+  .elean__1 {
+    padding: 0 16px;
+  }
+  
+  .cardList {
+    padding: 50px 0 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &__left {
+      width: 753px;
+      max-width: 100%;
+      position: relative;
+      padding-left: 150px;
+      &-navs {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0 !important;
+        width: 100px;
+        z-index: 2;
+        &_item {
+          outline: none;
+          & a {
+            border: 1px solid transparent;
+            transition: all 0.4s;
+            padding: 10px 9px;
+            cursor: pointer;
+            & img {
+              display: block;
+              width: 100%;
+              height: auto;
+              max-width: 100%;
+            }
+          }
+        }
+      }
+      &-bottom {
+        &_slyder {
+          overflow-y: auto;
+          -ms-overflow-style: none;
+          overflow: -moz-scrollbars-none;
+          height: 775px;
+          padding: 0;
+          width: 100%;
+          margin: 0 !important;
+          scroll-behavior: smooth;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          &-item {
+            & div {
+              & img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                border-style: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__rigth {
+      width: 500px;
+      max-width: 100%;
+      padding-top: 9px;
+      &-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        & h2 {
+          font-family: "FuturaBookC";
+          font-weight: 600;
+          font-size: 21px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          color: #222222;
+          width: 340px;
+          max-width: 100%;
+        }
+        & div {
+          width: 19px;
+          cursor: pointer;
+          height: 16px;
+          background-image: url("https://eleanboutique.ru/catalog/view/theme/default/assets/img/favorite-accent.svg");
+          background-size: 19px 16px;
+          min-width: 19px;
+          margin-top: 8px;
+        }
+      }
+      &-price {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 8px;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 20px;
+        color: #222222;
+      }
+      &-size {
+        margin: 28px 0 37px;
+        &_title {
+          font-family: "FuturaBookC";
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 21px;
+          color: #222222;
+          margin-bottom: 13px;
+        }
+        &_radio {
+          flex-wrap: wrap;
+          display: flex;
+          & label {
+            user-select: none;
+            position: relative;
+            margin-right: -0.8px;
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            & input {
+              display: none;
+            }
+            & span {
+              display: flex;
+              width: 100%;
+              height: 100%;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #d7b494;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 18px;
+              text-align: center;
+              color: #b59475;
+              position: relative;
+              z-index: 1;
+              transition: all 0.4s;
+              overflow: hidden;
+              cursor: pointer;
+              &::before {
+                content: "";
+                position: absolute;
+                left: -100%;
+                top: 100%;
+                width: 400%;
+                height: 1px;
+                background-color: #dadada;
+                transform: rotate(45deg);
+                opacity: 0;
+              }
+            }
+            & :hover {
+              color: #000000;
+              border-color: #000000;
+              z-index: 3;
+            }
+            & input:disabled + span::before {
+              opacity: 1;
+            }
+            & input:disabled + span {
+              z-index: 0;
+              border-color: #dadada;
+              color: #dadada;
+              cursor: default;
+            }
+            & input:checked + span {
+              color: #fff;
+              z-index: 3;
+              background-color: #222;
+              border-color: #222;
+            }
+          }
+        }
+        &_buttons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 17px;
+          &-btns {
+            text-decoration: none;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #b59475;
+            &_icon {
+              width: 21px;
+              min-width: 21px;
+              display: block;
+              & img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+              }
+            }
+            &_text {
+              text-transform: uppercase;
+              display: inline-block;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 22px;
+              letter-spacing: 0.02em;
+              color: #b59475;
+              font-family: "FuturaBookC";
+              padding-top: 2px;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      &-buttons {
+        display: flex;
+        margin: 20px 0 35px;
+        flex-wrap: wrap;
+        &_big {
+          text-decoration: none;
+          outline: none;
+          display: flex;
+          width: 100%;
+          height: 50px;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          border: none;
+          background-color: #242424;
+          border-radius: 3px;
+          font-family: "FuturaBookC";
+          font-weight: 500;
+          font-size: 15px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #ffffff;
+          transition: all 0.4s;
+          border: 1px solid transparent;
+          &:hover {
+            color: #000;
+            background-color: #fff;
+            border-color: #000;
+          }
+        }
+        &_flex {
+          display: flex;
+          width: 100%;
+          margin-top: 20px;
+          & a {
+            width: 144px;
+            min-width: 144px;
+            margin-right: 9px;
+            color: #454545;
+            transition: all 0.4s;
+            border: 1px solid #e3e3e3;
+            background-color: transparent;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 15px;
+            font-family: "FuturaBookC";
+            letter-spacing: 0.1em;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            height: 50px;
+            display: flex;
+            &:hover {
+              background-color: #000000;
+              color: #fff;
+            }
+            &:last-child {
+              flex-grow: 1;
+            }
+          }
+        }
+      }
+      &-text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 23px;
+        color: #242424;
+        font-family: "FuturaBookC";
+        &.pd {
+          padding-top: 10px;
+        }
+      }
+      &-parametrs {
+        border-top: 1px solid #e6e6e6;
+        margin-top: 37px;
+        &_item {
+          border-bottom: 1px solid #e6e6e6;
+          &-flex {
+            margin-right: 8px;
+            justify-content: space-between;
+            display: flex;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 15px 0 15px 12px;
+            position: relative;
+            font-family: "FuturaBookC";
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 21px;
+            color: #222222;
+            & div {
+              & img {
+                width: 11px;
+                height: 11px;
+              }
+            }
+          }
+          &-block {
+            display: none;
+            padding: 0 12px 15px;
+              &-flex {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              font-size: 15px;
+              line-height: 18px;
+              margin-top: 20px;
+              color: #242424;
+              &:first-child {
+                margin-top: 0;
+              }
+              & + p::before {
+                background-color: red;
+              }
+              & span {
+                display: block;
+                flex-grow: 1;
+                font-weight: 500;
+              }
+              & p {
+                font-weight: normal;
+                width: 168px;
+                min-width: 168px;
+                margin-left: 13px;
+                position: relative;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  left: -12px;
+                  width: 41px;
+                  height: 1px;
+                  bottom: -10px;
+                  background-color: #dadada;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .name {
+    &::before {
+      display: none;
+    }
+  }
+
+  .page {
+    overflow: hidden
+  }
