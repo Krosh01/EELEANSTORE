@@ -34,6 +34,7 @@ import Favorite from './pages/Favorite/Favorite';
 import Decor from './pages/Decor/Decor';
 import ModalKama from './pages/modal/modalKama';
 import MakeAnOrder from './pages/MakeAnOrder/MakeAnOrder';
+import Makesense from './pages/MakeAnOrder/Makesense';
 
 function App() {
   return (
@@ -109,7 +110,7 @@ function App() {
           />
           <Route
           path='/MakeAnOrder'
-          element={<MakeAnOrder/>}
+          element={<Makesense/>}
         />
         <Route
           path='/complete'

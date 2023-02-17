@@ -9,8 +9,9 @@ import slyde3 from "../../assets/makeAnOrder/slydes/3slyde.jpeg";
 import slyde4 from "../../assets/makeAnOrder/slydes/4slyde.jpeg";
 import plus from "../../assets/makeAnOrder/slydes/plus.svg";
 import minus from "../../assets/makeAnOrder/slydes/minus.svg";
+import store from "../../redux";
 
-const MakeAnOrder = () => {
+const MakeAnOrder = ({products}) => {
   const [active, setActive] = useState(false);
   const [active2, setActive2] = useState(false);
 
@@ -23,22 +24,22 @@ const MakeAnOrder = () => {
             <div className="cardList__left-navs">
               <div className="cardList__left-navs_item">
                 <a href="#slide1">
-                  <img src={slyde1} alt="img" />
+                  <img src={products.img} alt="img" />
                 </a>
               </div>
               <div className="cardList__left-navs_item">
                 <a href="#slide2">
-                  <img src={slyde2} alt="img" />
+                  <img src={products.img} alt="img" />
                 </a>
               </div>
               <div className="cardList__left-navs_item">
                 <a href="#slide3">
-                  <img src={slyde3} alt="img" title="Блуза с баской" />
+                  <img src={products.img} alt="img" title="Блуза с баской" />
                 </a>
               </div>
               <div className="cardList__left-navs_item">
                 <a href="#slide4">
-                  <img src={slyde4} alt="img" title="Блуза с баской" />
+                  <img src={products.img} alt="img" title="Блуза с баской" />
                 </a>
               </div>
             </div>
@@ -46,22 +47,22 @@ const MakeAnOrder = () => {
               <div className="cardList__left-bottom_slyder">
                 <div className="cardList__left-bottom_slyder-item" id="slide1">
                   <div>
-                    <img src={slyde1} alt="img" title="Блуза с баской" />
+                    <img src={products.img} alt="img" title="Блуза с баской" />
                   </div>
                 </div>
                 <div className="cardList__left-bottom_slyder-item" id="slide2">
                   <div>
-                    <img src={slyde2} alt="img" title="Блуза с баской" />
+                    <img src={products.img} alt="img" title="Блуза с баской" />
                   </div>
                 </div>
                 <div className="cardList__left-bottom_slyder-item" id="slide3">
                   <div>
-                    <img src={slyde3} alt="img" />
+                    <img src={products.img} alt="img" />
                   </div>
                 </div>
                 <div className="cardList__left-bottom_slyder-item" id="slide4">
                   <div>
-                    <img src={slyde4} alt="img" />
+                    <img src={products.img} alt="img" />
                   </div>
                 </div>
               </div>
@@ -69,10 +70,10 @@ const MakeAnOrder = () => {
           </div>
           <div className="cardList__rigth">
             <div className="cardList__rigth-top">
-              <h2>Блуза с баской</h2>
+              <h2>{products.title}</h2>
               <div></div>
             </div>
-            <div className="cardList__rigth-price">18 900 ₽</div>
+            <div className="cardList__rigth-price">{products.price} ₽</div>
             <div className="cardList__rigth-size">
               <div className="cardList__rigth-size_title">Размер</div>
               <div className="cardList__rigth-size_radio">

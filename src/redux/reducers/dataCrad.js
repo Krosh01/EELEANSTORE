@@ -42,6 +42,7 @@ const coin = {
     },
   ],
   favorite: [],
+  makeOrder: []
 };
 
 export default (state = coin, action) => {
@@ -84,6 +85,8 @@ export default (state = coin, action) => {
     }
     case "SET_FAVORITES":
       return { ...state, favorite: [...state.favorite, action.payload] };
+    case "MAKE__ADD":
+      return {...state, makeOrder: [...state.makeOrder, action.payload]}
     default:
       return state;
   }
@@ -110,5 +113,11 @@ export const deletePrice = (id) => {
 export const setFavorites = (favorite, payload) => {
   return (dispath) => {
     return dispath({ type: "SET_FAVORITES", favorite, payload });
+  };
+};
+
+export const MakeAdd = (makeOrder, payload) => {
+  return (dispath) => {
+    return dispath({ type: "MAKE__ADD", makeOrder, payload });
   };
 };
