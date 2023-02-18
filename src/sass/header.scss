@@ -95,25 +95,17 @@
         margin: 0 auto;
         padding: 19px 20px;
     }
-    .header__nav{
-        display: flex;
-        justify-content: center;
-       
-    }
-    .header__burger{
-        transform: translate(70px,0);
-    }
-    .header_inst{
+    .num{
         display: none;
     }
     .adapt_icon{
-        transform: translate(-310px,0);
-    }
-    .adapt_icon_2{
-        transform: translate(-80px,0);
+        display: none;
     }
     .header__nav-logo{
-        transform: translate(-15px,0);
+        margin-left: -100px
+    }
+    .header__nav-logo_title{
+        display: none;
     }
     .header__nav-bottom{
         display: none;

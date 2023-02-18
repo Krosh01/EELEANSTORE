@@ -26,7 +26,7 @@ const Collection = () => {
                 onClick={() => changeCategory("novelties")}
               >
                 <p>Новинки</p>
-                <img className="adaptivka_img" src={collect1} alt="" />
+                <img className="adaptivka_img1" src={collect1} alt="" />
               </Link>
               <div className="colliction_left_down">
                 <Link
@@ -35,7 +35,7 @@ const Collection = () => {
                   onClick={() => changeCategory("tuxedo")}
                 >
                   <p>Смокиниги</p>
-                  <img className="adaptivka_img" src={collect2} alt="" />
+                  <img className="adaptivka_img2" src={collect2} alt="" />
                 </Link>
                 <Link
                   to="/Catalog"
@@ -43,7 +43,7 @@ const Collection = () => {
                   onClick={() => changeCategory("trousers")}
                 >
                   <p>Брюки</p>
-                  <img className="adaptivka_img" src={collect3} alt="" />
+                  <img className="adaptivka_img3" src={collect3} alt="" />
                 </Link>
               </div>
             </div>
@@ -55,7 +55,7 @@ const Collection = () => {
                   onClick={() => changeCategory("Evening sets")}
                 >
                   <p>Акции</p>
-                  <img className="adaptivka_img" src={collect4} alt="" />
+                  <img className="adaptivka_img4" src={collect4} alt="" />
                 </Link>
                 <Link
                   to="/Catalog"
@@ -63,7 +63,7 @@ const Collection = () => {
                   onClick={() => changeCategory("suits")}
                 >
                   <p>Костюмы</p>
-                  <img className="adaptivka_img" src={collect5} alt="" />
+                  <img className="adaptivka_img5" src={collect5} alt="" />
                 </Link>
               </div>
               <Link
@@ -72,7 +72,7 @@ const Collection = () => {
                 onClick={() => changeCategory("dresses")}
               >
                 <p>Платья</p>
-                <img className="adaptivka_img" src={collect6} alt="" />
+                <img className="adaptivka_img6" src={collect6} alt="" />
               </Link>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Collection = () => {
                 onClick={() => changeCategory("blouses")}
               >
                 <p>Блузы</p>
-                <img className="adaptivka_img" src={collect7} alt="" />
+                <img className="adaptivka_img7" src={collect7} alt="" />
               </Link>
               <Link
                 to="/Catalog"
@@ -92,7 +92,7 @@ const Collection = () => {
                 onClick={() => changeCategory("skirt")}
               >
                 <p>Юбки</p>
-                <img className="adaptivka_img" src={collect8} alt="" />
+                <img className="adaptivka_img8" src={collect8} alt="" />
               </Link>
             </div>
             <div className="collection_inner_down_right">
@@ -102,7 +102,7 @@ const Collection = () => {
                 onClick={() => changeCategory("tops and vests")}
               >
                 <p>Топы и жилеты</p>
-                <img className="adaptivka_img" src={collect08} alt="" />
+                <img className="adaptivka_img08" src={collect08} alt="" />
               </Link>
               <Link
                 to="/Catalog"
@@ -110,7 +110,7 @@ const Collection = () => {
                 onClick={() => changeCategory("accessories")}
               >
                 <p>Аксессуары</p>
-                <img className="adaptivka_img" src={collect9} alt="" />
+                <img className="adaptivka_img9" src={collect9} alt="" />
               </Link>
             </div>
           </div>

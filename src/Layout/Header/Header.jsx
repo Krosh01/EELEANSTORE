@@ -29,7 +29,7 @@ const Header = () => {
                   <span className="header__burger-line"></span>
                 </div>
               </li>
-              <li>
+              <li className="adapt_icon" >
                 <Link>
                   <svg
                     width="18"
@@ -56,7 +56,7 @@ const Header = () => {
                   </svg>
                 </Link>
               </li>
-              <li>
+              <li className="adapt_icon" >
                 <a href="#">
                   <svg
                     width="20"
@@ -73,7 +73,7 @@ const Header = () => {
                   </svg>
                 </a>
               </li>
-              <li>
+              <li className="adapt_icon">
                 <a href="#">
                   <svg
                     width="8"
@@ -130,7 +130,7 @@ const Header = () => {
           </li>
           <li>
             <ul className="header__nav-num">
-              <li>
+              <li className="num" >
                 <a href="#">+7 (495) 150 - 14 - 77</a>
               </li>
               <li className="header__nav-num-icon">
